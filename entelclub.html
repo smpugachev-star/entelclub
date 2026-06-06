@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENTEL.CLUB — Радиостанции ATEX, UL913, IECEx для нефтегаза, химии, шахт и морских судов</title>
+  <meta name="description" content="Поставки радиостанций ENTEL: взрывобезопасные ATEX/UL913/IECEx/ТРТС, DMR, морские, PoC. Нефтегаз, химия, шахты, суда. Счёт с НДС 22% для юридических лиц.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://entel.club/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ENTEL.CLUB",
+    "url": "https://entel.club",
+    "description": "Официальный поставщик радиостанций ENTEL в России",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+7-495-980-99-45",
+      "contactType": "sales",
+      "availableLanguage": "Russian"
+    }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red:    #003087;
+      --red-dk: #002070;
+      --black:  #f4f5f7;
+      --dark:   #eceef2;
+      --dark2:  #ffffff;
+      --dark3:  #f0f2f6;
+      --border: #d0d5de;
+      --white:  #1a1e2e;
+      --grey:   #4a5568;
+      --grey-lt:#2d3748;
+      --font-display: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+      --font-body:    'Barlow', Arial, sans-serif;
+      --max-w: 1200px;
+      --r: 2px;
+      --t: 0.18s ease;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--black);
+      color: var(--white);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button { cursor: pointer; border: none; background: none; font-family: var(--font-body); }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    section { padding: 80px 0; }
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--red);
+      color: rgba(255,255,255,0.9);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 0;
+      letter-spacing: 0.3px;
+    }
+    .topbar .container { display: flex; justify-content: space-between; align-items: center; }
+    .topbar a { color: rgba(255,255,255,0.9); transition: color var(--t); }
+    .topbar a:hover { color: #fff; }
+    .topbar-right { display: flex; gap: 24px; }
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow var(--t);
+    }
+    .header-inner {
+      display: flex; align-items: center;
+      justify-content: space-between; height: 68px;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 10px; }
+    .logo-img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+    }
+    .logo-img-fallback {
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #1a1e2e;
+      line-height: 1;
+    }
+    .logo-dot { color: var(--red); }
+    .logo-club {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--red);
+      text-transform: uppercase;
+      border-left: 2px solid var(--border);
+      padding-left: 10px;
+      margin-left: 2px;
+    }
+    nav { display: flex; }
+    nav a {
+      font-size: 13px; font-weight: 600;
+      color: #4a5568; padding: 8px 16px;
+      transition: color var(--t); white-space: nowrap;
+      letter-spacing: 0.3px; text-transform: uppercase;
+    }
+    nav a:hover { color: #1a1e2e; }
+    .header-contacts { display: flex; align-items: center; gap: 10px; }
+    .phone-link {
+      font-size: 15px; font-weight: 700; color: #1a1e2e;
+      white-space: nowrap; letter-spacing: 0.5px;
+    }
+    .phone-link:hover { color: var(--red); }
+    .btn-tg {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #0088CC; color: #fff; font-size: 12px; font-weight: 700;
+      padding: 7px 12px; border-radius: var(--r); transition: opacity var(--t);
+    }
+    .btn-tg:hover { opacity: 0.85; }
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      background: #0e1a35;
+      overflow: hidden;
+      min-height: 620px;
+      display: flex; align-items: center;
+      padding: 0;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://i.ibb.co/BSDWHNY/DTEx-Front-Display-Close-Up.jpg');
+      background-size: cover;
+      background-position: center center;
+      opacity: 1;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(100deg, #0e1a35 38%, rgba(14,26,53,0.7) 65%, rgba(14,26,53,0.2) 100%);
+    }
+    .hero-inner {
+      position: relative; z-index: 1;
+      width: 100%; padding: 100px 0 80px;
+    }
+    .hero-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: #7db3f5;
+      margin-bottom: 20px;
+    }
+    .hero-label::before {
+      content: ''; display: block;
+      width: 24px; height: 2px; background: #7db3f5;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 7vw, 88px);
+      font-weight: 900; line-height: 0.95;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    .hero h1 .accent { color: #7db3f5; }
+    .hero-desc {
+      font-size: 17px; color: rgba(255,255,255,0.7); line-height: 1.7;
+      margin-bottom: 40px; max-width: 520px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 56px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--red); color: #fff;
+      font-size: 13px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 14px 28px; border-radius: var(--r);
+      transition: background var(--t);
+    }
+    .btn-primary:hover { background: var(--red-dk); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #fff;
+      font-size: 13px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 14px 28px; border-radius: var(--r);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      transition: border-color var(--t), background var(--t);
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.05); }
+    .hero-stats {
+      display: flex; gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 40px;
+    }
+    .hero-stat {
+      padding-right: 40px; margin-right: 40px;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .hero-stat:last-child { border-right: none; }
+    .hero-stat-value {
+      font-family: var(--font-display);
+      font-size: 42px; font-weight: 900; line-height: 1;
+      color: #ffffff; letter-spacing: -1px;
+    }
+    .hero-stat-value .u { color: #7db3f5; font-size: 28px; }
+    .hero-stat-label {
+      font-size: 11px; color: rgba(255,255,255,0.5);
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-top: 4px;
+    }
+    /* ── BADGES STRIP ── */
+    .badges-strip {
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .badges-inner {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #4a5568;
+      border: 1px solid var(--border);
+      padding: 6px 12px; border-radius: var(--r);
+      transition: border-color var(--t), color var(--t);
+    }
+    .badge:hover { border-color: var(--red); color: #1a1e2e; }
+    .badge-dot { width: 6px; height: 6px; background: var(--red); border-radius: 50%; flex-shrink: 0; }
+    /* ── SECTION HEADERS ── */
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--red); margin-bottom: 12px;
+    }
+    .section-label::before {
+      content: ''; display: block;
+      width: 20px; height: 2px; background: var(--red);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 900; letter-spacing: -0.5px;
+      text-transform: uppercase; line-height: 1.0; margin-bottom: 16px;
+    }
+    .section-subtitle { font-size: clamp(13px, 2.4vw, 16px); color: var(--grey); max-width: 560px; line-height: 1.7; }
+    .section-header { margin-bottom: 48px; }
+    .section-header-row {
+      display: flex; justify-content: space-between;
+      align-items: flex-end; margin-bottom: 48px; gap: 24px; flex-wrap: wrap;
+    }
+    /* ── CATALOG ── */
+    #catalog { background: var(--dark); }
+    .catalog-tabs {
+      display: flex; gap: 4px; margin-bottom: 40px;
+      background: var(--border); padding: 3px;
+      border-radius: var(--r); width: fit-content; flex-wrap: wrap;
+    }
+    .tab-btn {
+      font-family: var(--font-body);
+      font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--grey); padding: 8px 18px;
+      border-radius: 1px; transition: all var(--t); background: transparent;
+    }
+    .tab-btn.active { background: var(--red); color: #fff; }
+    .tab-btn:hover:not(.active) { color: var(--white); }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px; background: var(--border);
+    }
+    .product-card {
+      background: var(--dark2); padding: 28px;
+      display: flex; flex-direction: column;
+      transition: background var(--t);
+    }
+    .product-card:hover { background: var(--dark3); }
+    .product-tag {
+      display: inline-block; font-size: 10px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 3px 8px; border-radius: 1px; margin-bottom: 16px; width: fit-content;
+    }
+    .tag-atex   { background: rgba(0,48,135,0.08); color: var(--red); border: 1px solid rgba(0,48,135,0.2); }
+    .tag-dmr    { background: rgba(0,100,200,0.08); color: #0060bb;   border: 1px solid rgba(0,100,200,0.2); }
+    .tag-marine { background: rgba(0,130,70,0.08);  color: #1a7a44;   border: 1px solid rgba(0,130,70,0.2); }
+    .tag-poc    { background: rgba(120,60,180,0.08);color: #7040c0;   border: 1px solid rgba(120,60,180,0.2); }
+    .tag-analog { background: rgba(80,80,80,0.06);  color: #555;      border: 1px solid #ddd; }
+    .product-img-wrap {
+      background: transparent; height: 180px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; border-radius: 1px; overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .product-img {
+      max-width: 100%; max-height: 100%;
+      width: auto; height: auto;
+      object-fit: contain;
+    }
+    .product-img-placeholder {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 8px; color: #c0c8d8; font-size: 11px;
+      letter-spacing: 1px; text-transform: uppercase;
+    }
+    .product-img-placeholder svg { opacity: 0.3; }
+    .product-name {
+      font-family: var(--font-display);
+      font-size: 20px; font-weight: 800; margin-bottom: 10px;
+      line-height: 1.2; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .product-spec {
+      font-size: 12px; color: var(--grey); margin-bottom: 16px;
+      line-height: 1.7; flex: 1;
+    }
+    .product-spec strong { color: var(--grey-lt); font-weight: 600; }
+    .product-footer {
+      display: flex; align-items: flex-end;
+      justify-content: space-between; gap: 12px;
+      padding-top: 16px; border-top: 1px solid var(--border);
+    }
+    .product-price {
+      font-family: var(--font-display);
+      font-size: 22px; font-weight: 900; color: var(--white); letter-spacing: -0.5px;
+    }
+    .product-price-note { font-size: 11px; color: var(--grey); font-weight: 400; }
+    .btn-order {
+      font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--red); border: 1.5px solid var(--red);
+      padding: 8px 14px; border-radius: var(--r);
+      transition: all var(--t); white-space: nowrap;
+    }
+    .btn-order:hover { background: var(--red); color: #fff; }
+    /* ── HOW IT WORKS ── */
+    .how-it-works { background: var(--black); }
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--border);
+    }
+    .step {
+      background: var(--dark2); padding: 36px 28px;
+      border-top: 3px solid transparent; transition: border-color var(--t);
+    }
+    .step:hover { border-top-color: var(--red); }
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 52px; font-weight: 900; color: #d0d8e8;
+      letter-spacing: -2px; line-height: 1; margin-bottom: 16px;
+    }
+    .step-title {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 10px;
+    }
+    .step-desc { font-size: 13px; color: var(--grey); line-height: 1.6; }
+    .step-note {
+      display: inline-block; margin-top: 14px;
+      font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--red);
+      background: rgba(0,48,135,0.07); border: 1px solid rgba(0,48,135,0.15);
+      padding: 4px 10px; border-radius: 1px;
+    }
+    /* ── ABOUT ── */
+    .about { background: #0e1a35; }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+    .about .section-label { color: #7db3f5; }
+    .about .section-label::before { background: #7db3f5; }
+    .about .section-title { color: #ffffff; }
+    .about .red-line { background: #7db3f5; }
+    .about-text { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.8; margin-bottom: 24px; }
+    .about-features { display: flex; flex-direction: column; gap: 1px; background: rgba(255,255,255,0.08); }
+    .about-feature {
+      background: rgba(255,255,255,0.04); padding: 22px 24px;
+      display: flex; gap: 16px; align-items: flex-start;
+      transition: background var(--t);
+    }
+    .about-feature:hover { background: rgba(255,255,255,0.08); }
+    .about-feature-icon {
+      width: 38px; height: 38px;
+      background: rgba(0,48,135,0.3);
+      border: 1px solid rgba(100,160,255,0.2);
+      border-radius: 1px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      color: #7db3f5;
+    }
+    .about-feature-title {
+      font-family: var(--font-display);
+      font-size: 15px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.5px; color: #ffffff; margin-bottom: 4px;
+    }
+    .about-feature-desc { font-size: 13px; color: rgba(255,255,255,0.5); }
+    .certs { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+    .cert-item {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 13px; color: rgba(255,255,255,0.55);
+    }
+    .cert-arrow { color: #7db3f5; font-size: 16px; line-height: 1; }
+    /* ── ORDER ── */
+    #order { background: var(--black); }
+    .order-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: start;
+    }
+    .order-info-text {
+      font-size: 14px; color: var(--grey); line-height: 1.8; margin-bottom: 28px;
+    }
+    .order-steps { display: flex; flex-direction: column; gap: 12px; }
+    .order-step { display: flex; gap: 14px; align-items: flex-start; }
+    .order-step-num {
+      width: 26px; height: 26px; background: var(--red); color: #fff;
+      font-size: 12px; font-weight: 800;
+      border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+    .order-step-text { font-size: 14px; color: var(--grey); line-height: 1.5; }
+    .order-step-text strong { color: var(--white); display: block; margin-bottom: 2px; font-weight: 700; }
+    .form-card {
+      background: var(--dark2);
+      border: 1px solid var(--border); padding: 36px; border-radius: var(--r);
+    }
+    .form-title {
+      font-family: var(--font-display);
+      font-size: 22px; font-weight: 900; text-transform: uppercase;
+      letter-spacing: 0.5px; margin-bottom: 24px;
+    }
+    .form-row { margin-bottom: 16px; }
+    .form-row-2 {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;
+    }
+    label {
+      display: block; font-size: 11px; font-weight: 700;
+      color: var(--grey); text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 6px;
+    }
+    label .hint {
+      font-weight: 400; text-transform: none; letter-spacing: 0;
+      color: #555; font-size: 11px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      border: 1.5px solid var(--border); border-radius: var(--r);
+      padding: 11px 14px; font-size: 14px;
+      font-family: var(--font-body);
+      color: #1a1e2e; background: #f8f9fc;
+      transition: border-color var(--t); outline: none;
+    }
+    input:focus, textarea:focus, select:focus { border-color: var(--red); }
+    input::placeholder, textarea::placeholder { color: #aab; }
+    textarea { resize: vertical; min-height: 80px; }
+    .vat-note {
+      font-size: 12px; color: var(--grey); margin-top: 16px;
+      padding: 10px 14px;
+      background: rgba(0,48,135,0.05);
+      border-left: 3px solid var(--red);
+      border-radius: 0 var(--r) var(--r) 0;
+    }
+    .btn-submit {
+      width: 100%; background: var(--red); color: #fff;
+      font-family: var(--font-display);
+      font-size: 16px; font-weight: 900; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 16px;
+      border-radius: var(--r); margin-top: 20px;
+      transition: background var(--t);
+    }
+    .btn-submit:hover { background: var(--red-dk); }
+    .form-disclaimer { font-size: 11px; color: #444; text-align: center; margin-top: 12px; }
+    /* ── CONTACTS ── */
+    .contacts { background: var(--dark); }
+    .contacts-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border); margin-top: 48px;
+    }
+    .contact-block { background: var(--dark2); padding: 32px 28px; }
+    .contact-block-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--grey); margin-bottom: 16px;
+    }
+    .contact-value {
+      font-family: var(--font-display);
+      font-size: 22px; font-weight: 900; text-transform: uppercase;
+      color: var(--white); margin-bottom: 8px; letter-spacing: 0.5px;
+    }
+    .contact-value a { transition: color var(--t); }
+    .contact-value a:hover { color: var(--red); }
+    .contact-note { font-size: 13px; color: var(--grey); }
+    .contact-messengers { display: flex; gap: 8px; margin-top: 14px; }
+    /* ── FOOTER ── */
+    footer {
+      background: #0e1a35;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 0; font-size: 13px; color: rgba(255,255,255,0.4);
+    }
+    .footer-inner {
+      display: flex; justify-content: space-between;
+      align-items: center; gap: 24px; flex-wrap: wrap;
+    }
+    .footer-logo-wrap { display: flex; align-items: center; gap: 10px; }
+    .footer-logo-img { height: 24px; width: auto; object-fit: contain; }
+    .footer-logo-text {
+      font-family: var(--font-display);
+      font-size: 22px; font-weight: 900; color: #ffffff; letter-spacing: -0.5px;
+    }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.4); transition: color var(--t); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-disclaimer {
+      border-top: 1px solid rgba(255,255,255,0.08); margin-top: 24px;
+      padding-top: 24px; font-size: 12px; color: rgba(255,255,255,0.25); line-height: 1.6;
+    }
+    /* ── CATALOG TAB LOGIC ── */
+    .catalog-section { display: none; }
+    .catalog-section.active { display: grid; }
+    /* ── DIVIDER ── */
+    .red-line { width: 48px; height: 3px; background: var(--red); margin: 20px 0; }
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .container { padding: 0 20px; }
+      .about-grid, .order-grid { grid-template-columns: 1fr; gap: 40px; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .contacts-grid { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .hero-stats { flex-wrap: wrap; gap: 24px; }
+      .hero-stat { border-right: none; padding-right: 0; margin-right: 0; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 60px 0; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .form-row-2 { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 44px; }
+      .hero-actions { flex-direction: column; }
+      .topbar-right { display: none; }
+    }
+
+    /* ══ Модальное окно «Подробнее» ══ */
+    .pmodal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(10,12,18,0.72); backdrop-filter: blur(2px);
+      align-items: center; justify-content: center; padding: 24px;
+    }
+    .pmodal-overlay.active { display: flex; }
+    .pmodal-box {
+      background: var(--dark2, #14161f); color: var(--grey-lt, #e4e8f0);
+      border: 1px solid var(--border, rgba(255,255,255,0.1));
+      border-radius: 2px; max-width: 880px; width: 100%; max-height: 88vh;
+      overflow-y: auto; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    }
+    .pmodal-close {
+      position: absolute; top: 14px; right: 14px; width: 36px; height: 36px;
+      border: 1px solid var(--border, rgba(255,255,255,0.15)); background: rgba(255,255,255,0.04);
+      color: inherit; font-size: 20px; line-height: 1; border-radius: 1px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; z-index: 2;
+    }
+    .pmodal-close:hover { background: var(--red, #c0392b); border-color: var(--red, #c0392b); color: #fff; }
+    .pmodal-grid { display: grid; grid-template-columns: 320px 1fr; gap: 0; }
+    .pmodal-img-wrap {
+      background: transparent; display: flex; align-items: center; justify-content: center;
+      padding: 32px; border-right: 1px solid var(--border, rgba(255,255,255,0.08));
+      min-height: 280px;
+    }
+    .pmodal-img-wrap img { max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; }
+    .pmodal-img-wrap .pmodal-noimg { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #6b7280; }
+    .pmodal-body { padding: 36px 36px 36px 32px; }
+    .pmodal-name {
+      font-family: var(--font-display); font-size: 24px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; line-height: 1.2;
+    }
+    .pmodal-price { font-size: 15px; color: var(--grey, #9aa1b1); margin-bottom: 22px; }
+    .pmodal-price strong { color: var(--grey-lt, #e4e8f0); font-size: 20px; font-weight: 800; }
+    .pmodal-section-title {
+      font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--grey, #9aa1b1);
+      margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border, rgba(255,255,255,0.08));
+    }
+    .pmodal-specs ul { list-style: none; margin: 0; padding: 0; }
+    .pmodal-specs li {
+      font-size: 13px; line-height: 1.6; color: var(--grey-lt, #e4e8f0);
+      padding: 7px 0 7px 18px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .pmodal-specs li::before {
+      content: ""; position: absolute; left: 0; top: 16px; width: 6px; height: 6px;
+      background: var(--red, #c0392b); border-radius: 50%;
+    }
+    .pmodal-empty {
+      font-size: 13px; line-height: 1.7; color: var(--grey, #9aa1b1);
+      border: 1px dashed var(--border, rgba(255,255,255,0.18)); border-radius: 1px;
+      padding: 28px; text-align: center;
+    }
+    .pmodal-empty strong { display: block; color: var(--grey-lt, #e4e8f0); font-size: 14px; margin-bottom: 6px; }
+    @media (max-width: 720px) {
+      .pmodal-grid { grid-template-columns: 1fr; }
+      .pmodal-img-wrap { border-right: none; border-bottom: 1px solid var(--border, rgba(255,255,255,0.08)); padding: 24px; min-height: 200px; }
+      .pmodal-body { padding: 26px 24px; }
+    }
+    /* ── ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ ── */
+    .policy-modal-box { max-width: 720px; }
+    .policy-modal-body { padding: 36px; }
+    .policy-modal-body h3 {
+      font-family: var(--font-display); font-size: 22px; font-weight: 800;
+      letter-spacing: 0.5px; text-transform: uppercase; color: #fff; margin: 0 0 20px;
+    }
+    .policy-modal-body p {
+      font-size: 13px; line-height: 1.8; color: var(--grey, #9aa1b1); margin: 0 0 14px;
+    }
+    .policy-modal-body p strong { color: var(--grey-lt, #e4e8f0); }
+    @media (max-width: 720px) { .policy-modal-body { padding: 26px 24px; } }
+  </style>
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div>Официальный дистрибьютор ENTEL · Поставки для юридических лиц и ИП</div>
+    <div class="topbar-right">
+      <a href="mailto:info@entel.club">info@entel.club</a>
+      <a href="#order">Запросить КП</a>
+    </div>
+  </div>
+</div>
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo-wrap">
+        <img src="https://i.ibb.co/8gRGxkNd/Entel-Logo-Grey-HQ.png" alt="Entel" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-img-fallback" style="display:none">ENTEL</span>
+        <span class="logo-club">CLUB</span>
+      </a>
+      <nav>
+        <a href="#catalog">Каталог</a>
+        <a href="#how-it-works">Как заказать</a>
+        <a href="#about">О компании</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-contacts">
+        <a href="tel:+74959809945" class="phone-link">+7 (495) 980-99-45</a>
+        <a href="https://t.me/entelclub" class="btn-tg" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="container">
+      <div class="hero-label">Официальный дистрибьютор ENTEL в России</div>
+      <h1>
+        Профессиональные<br>
+        радиостанции для<br>
+        <span class="accent">нефтегаза, химии,<br>шахт и морских судов</span>
+      </h1>
+      <p class="hero-desc">Взрывобезопасные <strong style="color:#fff">ATEX / UL913 / IECEx / ТРТС 012/2011</strong> — <strong style="color:#fff">РУДНИЧНЫЕ ВЗРЫВОЗАЩИЩЁННЫЕ</strong> и <strong style="color:#fff">РУДНИЧНЫЕ ОСОБО ВЗРЫВОЗАЩИЩЁННЫЕ</strong> — цифровые DMR, морские и PoC-решения. Поставки юридическим лицам со счётом и НДС 22%.</p>
+      <div class="hero-certs" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;">
+        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">ATEX Zone 1,2</span>
+        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">UL913</span>
+        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">IECEx</span>
+        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">ТРТС 012/2011</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Смотреть каталог
+        </a>
+        <a href="#order" class="btn-outline">Запросить коммерческое предложение</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">30<span class="u">+</span></div>
+          <div class="hero-stat-label">Моделей</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">ATEX</div>
+          <div class="hero-stat-label">Zone 1,2 / IECEx</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">НДС<span class="u"> 22%</span></div>
+          <div class="hero-stat-label">Счёт для юр. лиц</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">B2B</div>
+          <div class="hero-stat-label">Договор + УПД</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- BADGES STRIP -->
+<div class="badges-strip">
+  <div class="container">
+    <div class="badges-inner">
+      <span class="badge"><span class="badge-dot"></span>ATEX / IS — Взрывобезопасные</span>
+      <span class="badge"><span class="badge-dot"></span>DMR Tier I &amp; II</span>
+      <span class="badge"><span class="badge-dot"></span>VHF / UHF Marine</span>
+      <span class="badge"><span class="badge-dot"></span>PoC / Push-to-Cell</span>
+      <span class="badge"><span class="badge-dot"></span>IP68 / MIL-STD-810</span>
+      <span class="badge"><span class="badge-dot"></span>Доставка по России</span>
+    </div>
+  </div>
+</div>
+<!-- CATALOG -->
+<section id="catalog">
+  <div class="container">
+    <div class="section-header-row">
+      <div>
+        <div class="section-label">Каталог продукции</div>
+        <h2 class="section-title">Радиостанции ENTEL</h2>
+        <p class="section-subtitle">Выберите категорию под ваши задачи. Все цены с НДС 22%, актуальные условия — по запросу.</p>
+      </div>
+    </div>
+    <div class="catalog-tabs">
+      <button class="tab-btn active" onclick="switchTab('atex',this)">ATEX / ТРТС</button>
+      <button class="tab-btn" onclick="switchTab('ul913',this)">UL913 / ТРТС</button>
+      <button class="tab-btn" onclick="switchTab('iecex',this)">IECEx / ТРТС</button>
+      <button class="tab-btn" onclick="switchTab('dmr',this)">DMR Цифровые</button>
+      <button class="tab-btn" onclick="switchTab('analog',this)">Аналоговые</button>
+      <button class="tab-btn" onclick="switchTab('marine',this)">Морские</button>
+      <button class="tab-btn" onclick="switchTab('poc',this)">PoC / Push-to-Cell</button>
+      <button class="tab-btn" onclick="switchTab('acc',this)">Аксессуары</button>
+    </div>
+    <!-- ══ ШАБЛОН карточки (макрос) ══
+    <div class="product-card">
+      <span class="product-tag TAG">МЕТКА</span>
+      <div class="product-img-wrap"><div class="product-img-placeholder">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <span>Фото товара</span>
+      </div></div>
+      <div class="product-name">НАЗВАНИЕ</div>
+      <div class="product-spec">ХАРАКТЕРИСТИКИ</div>
+      <div class="product-footer">
+        <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+        <a href="" class="btn-order" target="_blank">Подробнее</a>
+      </div>
+    </div>
+    ══ конец шаблона ══ -->
+
+    <!-- ══════════ ATEX / ТРТС ══════════ -->
+    <div id="tab-atex" class="catalog-section active catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIA / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT822 / DT882 / DT882PMR" class="product-img"></div>
+        <div class="product-name">DT822 · DT882 · DT882PMR</div>
+        <div class="product-spec">
+          <strong>DT822</strong> VHF &nbsp;·&nbsp; <strong>DT882</strong> UHF &nbsp;·&nbsp; <strong>DT882PMR</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">134 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p1'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIA / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT825 / DT885 / DT885PMR" class="product-img"></div>
+        <div class="product-name">DT825 · DT885 · DT885PMR</div>
+        <div class="product-spec">
+          <strong>DT825</strong> VHF &nbsp;·&nbsp; <strong>DT885</strong> UHF &nbsp;·&nbsp; <strong>DT885</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">143 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p2'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIC / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT922 / DT982 / DT952" class="product-img"></div>
+        <div class="product-name">DT922 · DT982 · DT952</div>
+        <div class="product-spec">
+          <strong>DT922</strong> VHF &nbsp;·&nbsp; <strong>DT982</strong> UHF &nbsp;·&nbsp; <strong>DT952</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIC<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">143 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p3'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIC / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT925 / DT985 / DT953" class="product-img"></div>
+        <div class="product-name">DT925 · DT985 · DT953</div>
+        <div class="product-spec">
+          <strong>DT925</strong> VHF &nbsp;·&nbsp; <strong>DT985</strong> UHF &nbsp;·&nbsp; <strong>DT953</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIC<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">152 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p4'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ UL913 / ТРТС ══════════ -->
+    <div id="tab-ul913" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">UL913 / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/KxtxhPSD/DX582-IS-Face-on.jpg" alt="DX582-IS" class="product-img"></div>
+        <div class="product-name">DX446E-IS · DX522-IS · DX582-IS</div>
+        <div class="product-spec">
+          <strong>DX446E-IS</strong> PMR446 &nbsp;·&nbsp; <strong>DX522-IS</strong> VHF &nbsp;·&nbsp; <strong>DX582-IS</strong> UHF<br>
+          <strong>Стандарт:</strong> UL913 Class I Div 1&amp;2 + ТРТС 012/2011<br>
+          <strong>Тип:</strong> DMR Tier I&amp;II &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">62 920 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p5'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">UL913 / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/VcDJtkgw/DX585-IS-Face-on.jpg" alt="DX446L-IS / DX525-IS / DX585-IS" class="product-img"></div>
+        <div class="product-name">DX446L-IS · DX525-IS · DX585-IS</div>
+        <div class="product-spec">
+          <strong>DX446L-IS</strong> PMR446 &nbsp;·&nbsp; <strong>DX525-IS</strong> VHF &nbsp;·&nbsp; <strong>DX585-IS</strong> UHF<br>
+          <strong>Стандарт:</strong> UL913 Class I Div 1&amp;2 + ТРТС 012/2011<br>
+          <strong>Тип:</strong> DMR Tier I&amp;II &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">67 420 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p6'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ IECEx / ТРТС ══════════ -->
+    <div id="tab-iecex" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">IECEx / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT522 / DT582 / DT582PMR" class="product-img"></div>
+        <div class="product-name">DT522 · DT582 · DT582PMR</div>
+        <div class="product-spec">
+          <strong>DT522</strong> VHF &nbsp;·&nbsp; <strong>DT582</strong> UHF &nbsp;·&nbsp; <strong>DT582PMR</strong> PMR446<br>
+          <strong>Стандарт:</strong> IECEx Zone 1,2 + ТРТС 012/2011<br>
+          <strong>Защита:</strong> IP68, MIL-STD-810
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">112 300 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p7'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">IECEx / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT525 / DT585 / DT585PMR" class="product-img"></div>
+        <div class="product-name">DT525 · DT585 · DT585PMR</div>
+        <div class="product-spec">
+          <strong>DT525</strong> VHF &nbsp;·&nbsp; <strong>DT585</strong> UHF &nbsp;·&nbsp; <strong>DT585</strong> PMR446<br>
+          <strong>Стандарт:</strong> IECEx Zone 1,2 + ТРТС 012/2011<br>
+          <strong>Защита:</strong> IP68, MIL-STD-810
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">134 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p8'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ DMR ЦИФРОВЫЕ ══════════ -->
+    <div id="tab-dmr" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">DMR Цифровой</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/ynNH2zCk/DX482-446-E-FRONT.jpg" alt="DX446E / DX422 / DX482" class="product-img"></div>
+        <div class="product-name">DX446E · DX422 · DX482</div>
+        <div class="product-spec">
+          <strong>DX446E</strong> PMR446 &nbsp;·&nbsp; <strong>DX422</strong> VHF &nbsp;·&nbsp; <strong>DX482</strong> UHF<br>
+          <strong>Стандарт:</strong> DMR Tier I &amp; II &nbsp;·&nbsp; <strong>Дисплей:</strong> цветной TFT<br>
+          <strong>Защита:</strong> IP55, MIL-STD-810G
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">33 170 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p9'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">DMR Цифровой</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/cSzYnhBC/DX485-446-L-FRONT.jpg" alt="DX446L / DX425 / DX485" class="product-img"></div>
+        <div class="product-name">DX446L · DX425 · DX485</div>
+        <div class="product-spec">
+          <strong>DX446L</strong> PMR446 &nbsp;·&nbsp; <strong>DX425</strong> VHF &nbsp;·&nbsp; <strong>DX485</strong> UHF<br>
+          <strong>Стандарт:</strong> DMR Tier I &amp; II &nbsp;·&nbsp; <strong>Дисплей:</strong> цветной TFT<br>
+          <strong>Защита:</strong> IP55, MIL-STD-810G
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">42 100 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p10'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">DMR Ретранслятор</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/Z6VSTbLH/Entel-Digital-repeater-View-on.jpg" alt="Ретранслятор DR482" class="product-img"></div>
+        <div class="product-name">Ретранслятор DR482</div>
+        <div class="product-spec">
+          <strong>DR482</strong> UHF 400–470 МГц<br>
+          <strong>Стандарт:</strong> DMR Tier II &nbsp;·&nbsp; <strong>Мощность:</strong> до 40 Вт<br>
+          <strong>Применение:</strong> расширение зоны покрытия DMR-сети
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">245 990 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p11'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ АНАЛОГОВЫЕ ══════════ -->
+    <div id="tab-analog" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аналоговая</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/B2pxQQB4/HT782-Front.jpg" alt="HT712 / HT722 / HT782" class="product-img"></div>
+        <div class="product-name">HT712 · HT722 · HT782</div>
+        <div class="product-spec">
+          <strong>HT712</strong> 66–88 МГц &nbsp;·&nbsp; <strong>HT722</strong> VHF &nbsp;·&nbsp; <strong>HT782</strong> UHF<br>
+          <strong>Тип:</strong> Аналоговый &nbsp;·&nbsp; <strong>Мощность:</strong> 5 Вт<br>
+          <strong>Защита:</strong> IP55, MIL-STD-810G
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">41 100 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p12'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аналоговая</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/SwCD28pS/HT783-Front-Full.jpg" alt="HT713 / HT723 / HT783" class="product-img"></div>
+        <div class="product-name">HT713 · HT723 · HT783</div>
+        <div class="product-spec">
+          <strong>HT713</strong> 66–88 МГц &nbsp;·&nbsp; <strong>HT723</strong> VHF &nbsp;·&nbsp; <strong>HT783</strong> UHF<br>
+          <strong>Тип:</strong> Аналоговый &nbsp;·&nbsp; <strong>Мощность:</strong> 5 Вт<br>
+          <strong>Защита:</strong> IP55, MIL-STD-810G
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">46 390 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p13'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аналоговая MPT1327</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/Fbj6GZHM/HT7-X6-Front.jpg" alt="HT726 / HT786" class="product-img"></div>
+        <div class="product-name">HT726 · HT786 · MPT1327 «Т»</div>
+        <div class="product-spec">
+          <strong>HT726</strong> VHF &nbsp;·&nbsp; <strong>HT786</strong> UHF<br>
+          <strong>Стандарт:</strong> MPT1327 «Т» (транкинговый)<br>
+          <strong>Защита:</strong> IP55, MIL-STD-810G
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">98 990 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p14'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ МОРСКИЕ ══════════ -->
+    <div id="tab-marine" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-marine">Морская Fire Fighters</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/hS9vKPD/DTEx-UHF-Front.jpg" alt="DT885 FF IIB / DT985 FF IIC" class="product-img"></div>
+        <div class="product-name">DT885 FF IIB* · DT985 FF IIC</div>
+        <div class="product-spec">
+          <strong>DT885</strong> Морская FF IIB* &nbsp;·&nbsp; <strong>DT985</strong> Морская FF IIC<br>
+          <strong>Назначение:</strong> Fire Fighters — пожарные/спасатели<br>
+          <strong>Стандарт:</strong> ATEX / IECEx &nbsp;·&nbsp; <strong>Защита:</strong> IP68, погружаемые
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">145 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p15'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-marine">Морская Fire Fighters</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/7dnvQ30k/DTEx-VHF-Front.jpg" alt="DT844 FF IIB / DT944 FF IIC" class="product-img"></div>
+        <div class="product-name">DT844 FF IIB* · DT944 FF IIC</div>
+        <div class="product-spec">
+          <strong>DT844</strong> Морская FF IIB* &nbsp;·&nbsp; <strong>DT944</strong> Морская FF IIC<br>
+          <strong>Назначение:</strong> Fire Fighters — пожарные/спасатели<br>
+          <strong>Стандарт:</strong> ATEX / IECEx &nbsp;·&nbsp; <strong>Защита:</strong> IP68, погружаемые
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">145 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p16'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-marine">Морская VHF</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/xqCr9kNt/HT644-Front.jpg" alt="HT644" class="product-img"></div>
+        <div class="product-name">HT644</div>
+        <div class="product-spec">
+          <strong>HT644</strong> Морская VHF 156–163,275 МГц &nbsp;·&nbsp; только аналоговая связь<br>
+          <strong>Каналы:</strong> все морские каналы INT, USA, CAN<br>
+          <strong>Защита:</strong> IP68, погружаемые &nbsp;·&nbsp; <strong>Стандарт:</strong> MIL-STD 810C/D/E/F
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p35'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ PoC / Push-to-Cell ══════════ -->
+    <div id="tab-poc" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-poc">PoC / Wi-Fi</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/5XgXBjn8/DN-FRONT-SIDE.jpg" alt="DN495 PoC &amp; Wi-Fi" class="product-img"></div>
+        <div class="product-name">DN495 PoC &amp; Wi-Fi</div>
+        <div class="product-spec">
+          <strong>Технология:</strong> PoC + Wi-Fi<br>
+          <strong>Покрытие:</strong> сеть оператора 4G/LTE + Wi-Fi<br>
+          <strong>Защита:</strong> IP68 &nbsp;·&nbsp; <strong>ОС:</strong> Android
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p17'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-poc">PoC Сервер</span>
+        <div class="product-img-wrap"><div class="product-img-placeholder">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <span>Фото товара</span>
+        </div></div>
+        <div class="product-name">P1 Приватный сервер</div>
+        <div class="product-spec">
+          <strong>Тип:</strong> Приватный Push-to-Cell сервер<br>
+          <strong>Применение:</strong> корпоративная замена DMR Tier III<br>
+          <strong>Управление:</strong> web-интерфейс, мобильное приложение
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p18'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-poc">PoC Шлюз</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/d0rgCtSX/E-Po-C-Gateway.jpg" alt="Универсальный шлюз для P1" class="product-img"></div>
+        <div class="product-name">Универсальный шлюз для P1</div>
+        <div class="product-spec">
+          <strong>Тип:</strong> Шлюз / Gateway для системы P1<br>
+          <strong>Функция:</strong> интеграция аналоговых и DMR радиостанций в P1<br>
+          <strong>Интерфейс:</strong> RJ45, USB
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p19'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ АКСЕССУАРЫ ══════════ -->
+    <div id="tab-acc" class="catalog-section catalog-grid">
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аккумулятор</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/SD3rjrby/CNB450E.jpg" alt="CNB450E" class="product-img"></div>
+        <div class="product-name">Аккумулятор Li-Ion CNB450E</div>
+        <div class="product-spec">CNB450E &nbsp;·&nbsp; Li-Ion 2200 мА·ч &nbsp;·&nbsp; для серии DX</div>
+        <div class="product-footer">
+          <div><div class="product-price">10 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p20'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аккумулятор</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/SD3rjrby/CNB450E.jpg" alt="CNB450E-IS" class="product-img"></div>
+        <div class="product-name">Аккумулятор Li-Ion CNB450E-IS</div>
+        <div class="product-spec">CNB450E-IS &nbsp;·&nbsp; Li-Ion 2200 мА·ч &nbsp;·&nbsp; для серии DX-IS</div>
+        <div class="product-footer">
+          <div><div class="product-price">26 300 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p37'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аккумулятор</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/8ghkHwb2/CNB750-E-160603-110941.jpg" alt="CNB750E" class="product-img"></div>
+        <div class="product-name">Аккумулятор Li-Ion CNB750E</div>
+        <div class="product-spec">CNB750E &nbsp;·&nbsp; Li-Ion 2200 мА·ч &nbsp;·&nbsp; для серии HT7xx</div>
+        <div class="product-footer">
+          <div><div class="product-price">11 100 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p21'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аккумулятор</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/8ghkHwb2/CNB750-E-160603-110941.jpg" alt="CNB550EV2" class="product-img"></div>
+        <div class="product-name">Аккумулятор Li-Ion CNB550EV2</div>
+        <div class="product-spec">CNB550EV2 &nbsp;·&nbsp; Li-Ion 1800 мА·ч &nbsp;·&nbsp; для серии DT5xx</div>
+        <div class="product-footer">
+          <div><div class="product-price">26 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p38'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аккумулятор</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/8ghkHwb2/CNB750-E-160603-110941.jpg" alt="CNB950EV2" class="product-img"></div>
+        <div class="product-name">Аккумулятор Li-Ion CNB950EV2</div>
+        <div class="product-spec">CNB950EV2 &nbsp;·&nbsp; Li-Ion 1800 мА·ч &nbsp;·&nbsp; для серий DT8xx / DT9xx</div>
+        <div class="product-footer">
+          <div><div class="product-price">32 100 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p39'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Зарядное устройство</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/LDTw7BWT/Single-charger-side-Suggestion.jpg" alt="Зарядное устройство одиночное" class="product-img"></div>
+        <div class="product-name">Зарядное устройство одиночное CSAHT</div>
+        <div class="product-spec">Одиночное настольное зарядное устройство. Индикация заряда. Совместимость уточняется по модели рации.</div>
+        <div class="product-footer">
+          <div><div class="product-price">6 790 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p22'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Зарядное устройство</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/7J6GRHdt/six-pod-charger-Side.jpg" alt="Мультизарядное устройство 6 слотов" class="product-img"></div>
+        <div class="product-name">Мультизарядное устройство 6 слотов CSBHT</div>
+        <div class="product-spec">Многоместная зарядная стойка на 6 радиостанций. Для зарядки парка устройств одновременно.</div>
+        <div class="product-footer">
+          <div><div class="product-price">48 960 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p23'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/XkjFM9qs/ptt3.jpg" alt="Наушник-вкладыш с PTT" class="product-img"></div>
+        <div class="product-name">Наушник-вкладыш с PTT</div>
+        <div class="product-spec">Акустический трубочный наушник с кнопкой PTT и микрофоном. Совместимость уточняется по модели рации.</div>
+        <div class="product-footer">
+          <div><div class="product-price">8 300 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p24'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/LGgDk7z/CHPHX-DX-1.jpg" alt="Тяжёлая гарнитура шумозащитная" class="product-img"></div>
+        <div class="product-name">Тяжёлая гарнитура шумозащитная</div>
+        <div class="product-spec">Полноразмерные наушники с активным шумоподавлением для работы в условиях высокого шума (НПЗ, шахты).</div>
+        <div class="product-footer">
+          <div><div class="product-price">62 920 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p25'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/FbF5J97B/CMP450-DX-close.jpg" alt="Дистанционный микрофон-динамик" class="product-img"></div>
+        <div class="product-name">Выносной микрофон-динамик IP68 для моделей HT</div>
+        <div class="product-spec">Выносной микрофон-динамик с клипсой. Кнопка PTT.</div>
+        <div class="product-footer">
+          <div><div class="product-price">16 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p26'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Антенна</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/SDJ1F5rD/ant-vhf.jpg" alt="Антенна штыревая VHF" class="product-img"></div>
+        <div class="product-name">Антенна штыревая VHF</div>
+        <div class="product-spec">Гибкая штыревая антенна VHF 136–174 МГц. Оригинальный аксессуар ENTEL для серий DT / HT.</div>
+        <div class="product-footer">
+          <div><div class="product-price">4 600 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p27'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Антенна</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/Z1xb4qJY/ANT-UHF.jpg" alt="Антенна штыревая UHF" class="product-img"></div>
+        <div class="product-name">Антенна штыревая UHF</div>
+        <div class="product-spec">Гибкая штыревая антенна UHF 400–470 МГц. Оригинальный аксессуар ENTEL для серий DT / DX / HT.</div>
+        <div class="product-footer">
+          <div><div class="product-price">4 600 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p28'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Крепление</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/rRMLdmK5/CLC.jpg" alt="Плечевая кобура для серии DT без клавиатуры" class="product-img"></div>
+        <div class="product-name">Плечевая кобура</div>
+        <div class="product-spec">Плечевая кобура для ношения рации на груди / плече. Регулируемые ремни. Быстрый доступ к устройству. Для серии DT без клавиатуры.</div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p29'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Крепление</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/r27kQyr7/CLC-1.jpg" alt="Плечевая кобура для серии DT с клавиатурой" class="product-img"></div>
+        <div class="product-name">Плечевая кобура</div>
+        <div class="product-spec">Плечевая кобура для ношения рации на груди / плече. Регулируемые ремни. Быстрый доступ к устройству. Для серии DT с клавиатурой.</div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p36'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Программирование</span>
+        <div class="product-img-wrap"></div>
+        <div class="product-name">USB-кабель программирования DT-серия</div>
+        <div class="product-spec">Кабель для программирования рации через ПК. ПО ENTEL CPS. Серия DT (ATEX / IECEx).</div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p30'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Программирование</span>
+        <div class="product-img-wrap"></div>
+        <div class="product-name">USB-кабель программирования DX-серия</div>
+        <div class="product-spec">Кабель для программирования рации через ПК. ПО ENTEL CPS. Серия DX (DMR / UL913-IS).</div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p31'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/xqF90r48/CXR5-450-DX.jpg" alt="Костнопроводная гарнитура CXR5" class="product-img"></div>
+        <div class="product-name">Костнопроводная гарнитура CXR5</div>
+        <div class="product-spec">Костнопроводный микрофон под защитную одежду или каску &nbsp;·&nbsp; встроенный наушник &nbsp;·&nbsp; PTT IP67 c разъёмом Nexus &nbsp;·&nbsp; для моделей ATEX и IECEx</div>
+        <div class="product-footer">
+          <div><div class="product-price">112 500 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p32'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура ATEX</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/tw9CQT7f/EA12-450-DX.jpg" alt="Гарнитура взрывозащищённая ATEX EA12/DT9" class="product-img"></div>
+        <div class="product-name">Гарнитура взрывозащищённая ATEX EA12/DT9</div>
+        <div class="product-spec">Наушник с микрофоном, сертифицированный ATEX Zone 1. Для использования с взрывозащищёнными рациями серии DT.</div>
+        <div class="product-footer">
+          <div><div class="product-price">14 500 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p33'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Крепление</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/JwkzjRWv/03-Single-charger-front-2.jpg" alt="Настенное зарядное крепление" class="product-img"></div>
+        <div class="product-name">Настенное зарядное крепление</div>
+        <div class="product-spec">Настенный держатель-зарядка для рации. Постоянная готовность устройства. Для одиночных и многоместных конфигураций.</div>
+        <div class="product-footer">
+          <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p34'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Процесс работы</div>
+      <h2 class="section-title">Как оформить заказ</h2>
+      <p class="section-subtitle">Работаем только с юридическими лицами и ИП. Никакого онлайн-эквайринга — только счёт и договор.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Оставьте заявку</div>
+        <div class="step-desc">Заполните форму или напишите в Telegram. Укажите модель или задачу — поможем подобрать.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Получите КП со счётом</div>
+        <div class="step-desc">В течение 1 рабочего дня пришлём коммерческое предложение с актуальными ценами и счёт на оплату.</div>
+        <span class="step-note">НДС 22% включён</span>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Оплата и документы</div>
+        <div class="step-desc">Оплата по безналичному расчёту. Предоставляем УПД/ТОРГ-12, счёт-фактуру, договор поставки.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Доставка</div>
+        <div class="step-desc">Отправка транспортной компанией или самовывоз из Москвы. Срок по России — 3–7 рабочих дней.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-label">О компании</div>
+        <h2 class="section-title">Официальный дистрибьютор ENTEL в России</h2>
+        <div class="red-line"></div>
+        <p class="about-text">ENTEL.CLUB — авторизованный поставщик профессиональных радиостанций ENTEL Communications Ltd. Работаем с промышленными предприятиями, нефтегазовым сектором, судостроительными компаниями и службами безопасности.</p>
+        <p class="about-text">Поставляем оборудование на объекты с повышенными требованиями к безопасности: нефтеперерабатывающие заводы, химические производства, шахты и морские суда.</p>
+        <div class="certs">
+          <div class="cert-item"><span class="cert-arrow">→</span>Авторизованный дистрибьютор ENTEL Communications Ltd</div>
+          <div class="cert-item"><span class="cert-arrow">→</span>Поставки оборудования с ATEX Zone 1,2 сертификацией</div>
+          <div class="cert-item"><span class="cert-arrow">→</span>Декларации о соответствии РФ на всё оборудование</div>
+          <div class="cert-item"><span class="cert-arrow">→</span>Гарантийный и постгарантийный сервис</div>
+        </div>
+      </div>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Оригинальная продукция</div>
+            <div class="about-feature-desc">Только оригинальное оборудование с заводскими сертификатами. Полная цепочка документов от производителя.</div>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Быстрое согласование</div>
+            <div class="about-feature-desc">КП и счёт — в течение 1 рабочего дня. Для крупных партий — индивидуальные условия.</div>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Полный пакет документов</div>
+            <div class="about-feature-desc">Договор, счёт-фактура, УПД/ТОРГ-12, декларации соответствия, паспорта изделий.</div>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5a2 2 0 0 1 1.99-2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.09v-.17z"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Техническая поддержка</div>
+            <div class="about-feature-desc">Подбор под проект, программирование частот, постпродажное обслуживание.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ORDER FORM -->
+<section id="order">
+  <div class="container">
+    <div class="order-grid">
+      <div>
+        <div class="section-label">Оформление заявки</div>
+        <h2 class="section-title">Запросите коммерческое предложение</h2>
+        <div class="red-line"></div>
+        <p class="order-info-text">Мы не используем онлайн-эквайринг. Заявка — это запрос счёта. В ответ вы получите КП с актуальными ценами и счёт для оплаты.</p>
+        <div class="order-steps">
+          <div class="order-step">
+            <div class="order-step-num">1</div>
+            <div class="order-step-text">
+              <strong>Заполните форму</strong>
+              Укажите модель или задачу. Если не знаете модель — опишите условия эксплуатации.
+            </div>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">2</div>
+            <div class="order-step-text">
+              <strong>Получите КП и счёт</strong>
+              В течение 1 рабочего дня пришлём коммерческое предложение на email.
+            </div>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">3</div>
+            <div class="order-step-text">
+              <strong>Оплата и отгрузка</strong>
+              После оплаты счёта — отправка ТК или самовывоз из Москвы.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-title">Заявка на КП</div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <label for="company">Организация</label>
+            <input type="text" id="company" name="company" placeholder="ООО «Название компании»" required>
+          </div>
+          <div class="form-row-2">
+            <div>
+              <label for="inn">ИНН <span class="hint">(для выставления счёта)</span></label>
+              <input type="text" id="inn" name="inn" placeholder="1234567890">
+            </div>
+            <div>
+              <label for="kpp">КПП <span class="hint">(для юр. лиц)</span></label>
+              <input type="text" id="kpp" name="kpp" placeholder="123456789">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="contact">Контактное лицо</label>
+            <input type="text" id="contact" name="contact" placeholder="Иванов Иван Иванович" required>
+          </div>
+          <div class="form-row-2">
+            <div>
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ivan@company.ru" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="product">Модель или задача</label>
+            <textarea id="product" name="product" placeholder="Например: взрывобезопасные рации ATEX для нефтяного предприятия, 10 штук. Или укажите конкретную модель." required></textarea>
+          </div>
+          <div class="vat-note">Все цены с НДС 22% — стандартная ставка для нашей деятельности. При необходимости предоставим разъяснение для бухгалтерии.</div>
+          <button type="submit" class="btn-submit">Отправить заявку — получить счёт</button>
+          <div class="form-disclaimer">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACTS -->
+<section id="contacts" class="contacts">
+  <div class="container">
+    <div class="section-label">Контакты</div>
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <div class="contacts-grid">
+      <div class="contact-block">
+        <div class="contact-block-label">Телефон</div>
+        <div class="contact-value"><a href="tel:+74959809945">+7 (495) 980-99-45</a></div>
+        <div class="contact-note">Пн–Пт, 9:00–18:00 МСК</div>
+        <div class="contact-messengers">
+          <a href="https://t.me/entelclub" class="btn-tg" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">Email</div>
+        <div class="contact-value"><a href="mailto:info@entel.club">info@entel.club</a></div>
+        <div class="contact-note">Для коммерческих запросов и КП</div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">Адрес</div>
+        <div class="contact-value" style="font-size:18px;letter-spacing:0">Москва</div>
+        <div class="contact-note">Самовывоз по предварительной договорённости</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="/" class="footer-logo-wrap">
+        <img src="https://i.ibb.co/8gRGxkNd/Entel-Logo-Grey-HQ.png" alt="Entel" class="footer-logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="footer-logo-text" style="display:none">ENTEL</span>
+        <span class="logo-club" style="font-size:11px">CLUB</span>
+      </a>
+      <div class="footer-links">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О компании</a>
+        <a href="#order">Заказать</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#" onclick="openPolicyModal(); return false;">Политика конфиденциальности</a>
+      </div>
+      <div style="font-size:12px">&copy; 2025 ENTEL.CLUB</div>
+    </div>
+    <div class="footer-disclaimer">
+      Информация о ценах носит справочный характер. Точная стоимость подтверждается в коммерческом предложении. Все цены с НДС 22%.
+    </div>
+  </div>
+</footer>
+
+<!-- ══ Модальное окно: политика конфиденциальности ══ -->
+<div class="pmodal-overlay" id="policy-modal" onclick="if(event.target===this) closePolicyModal();">
+  <div class="pmodal-box policy-modal-box">
+    <button class="pmodal-close" onclick="closePolicyModal()" aria-label="Закрыть">✕</button>
+    <div class="policy-modal-body">
+      <h3>Политика конфиденциальности</h3>
+      <p>Настоящая Политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006 №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению их безопасности, принимаемые ENTEL.CLUB (далее — «Оператор»).</p>
+      <p><strong>1. Общие положения.</strong> Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+      <p><strong>2. Сбор и использование данных.</strong> Настоящая политика Оператора в отношении обработки персональных данных применяется ко всей информации, которую Оператор может получить о посетителях сайта entelclub.ru. Персональные данные (имя, телефон, адрес электронной почты, реквизиты организации) предоставляются пользователем самостоятельно при оформлении заявки на коммерческое предложение или счёт и используются исключительно для подготовки и направления коммерческих документов, обратной связи и информирования о статусе заказа.</p>
+      <p><strong>3. Передача данных третьим лицам.</strong> Оператор не передаёт полученные персональные данные третьим лицам, за исключением случаев, прямо предусмотренных законодательством Российской Федерации.</p>
+      <p><strong>4. Защита данных.</strong> Оператор принимает необходимые правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.</p>
+      <p><strong>5. Изменение политики.</strong> Любые изменения политики Оператора в отношении обработки персональных данных будут отражены в настоящем документе. Политика действует бессрочно до замены её новой версией.</p>
+      <p><strong>6. Контакты.</strong> Разъяснения по вопросам, касающимся обработки персональных данных, можно получить, обратившись к Оператору по электронной почте: <strong>sales@viaglobe.ru</strong>.</p>
+      <p>Нажимая кнопку «Отправить» или «Оформить заказ» на сайте, пользователь подтверждает своё согласие с настоящей Политикой и даёт согласие на обработку своих персональных данных.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ Модальное окно: фото + подробные характеристики товара ══ -->
+<div class="pmodal-overlay" id="pmodal" onclick="if(event.target===this) closeProductModal();">
+  <div class="pmodal-box">
+    <button class="pmodal-close" onclick="closeProductModal()" aria-label="Закрыть">✕</button>
+    <div class="pmodal-grid">
+      <div class="pmodal-img-wrap" id="pmodal-img-wrap"></div>
+      <div class="pmodal-body">
+        <div class="pmodal-name" id="pmodal-name"></div>
+        <div class="pmodal-price" id="pmodal-price"></div>
+        <div class="pmodal-section-title">Подробные характеристики</div>
+        <div id="pmodal-specs"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* ══════════════════════════════════════════════════════════════
+     ДАННЫЕ ДЛЯ МОДАЛЬНОГО ОКНА «ПОДРОБНЕЕ»
+     ----------------------------------------------------------------
+     Карточки с подтверждённым совпадением на entelradio.ru — заполнены
+     подробными характеристиками (specs: [...]).
+     Карточки без точного совпадения — specs: null → показывается
+     пустой блок с инструкцией для ручного заполнения.
+     Чтобы заполнить вручную: найдите нужный товар по id ниже и впишите
+     массив строк в specs, например:
+       specs: ["Характеристика 1", "Характеристика 2", ...]
+  ══════════════════════════════════════════════════════════════ */
+  var PRODUCT_DETAILS = {
+    p1: { name: "DT822 · DT882 · DT882PMR", price: "134 900 ₽", img: "https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg",
+      specs: [
+        "VHF 136–174 МГц / UHF 400–470 МГц / PMR446, вокодер AMBE+2™",
+        "16 частотных каналов, 1 зона",
+        "Класс взрывозащиты: ATEX II 2G Ex ib IIA T4 Gb · ТР ТС 012/2011: 1Ex ib IIA T4 Gb X",
+        "Рудничная защита: РО Ex ia I Ma X / РВ Ex ib I Mb X",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 5/4 Вт VHF/UHF (high) / 1 Вт (low) / 0,5 Вт PMR446",
+        "2-слотовый симплекс (TDMA Two-Slot Direct Mode), определение ID говорящего",
+        "Функции «Одинокий рабочий», «Человек упал» (опционально), кнопка экстренного вызова",
+        "3 программируемые кнопки, настройка звука для аксессуаров",
+        "Вес 435 г, габариты 138×60×38 мм (с аккумулятором CNB950EV2)",
+        "В комплекте: антенна, аккумулятор Li-Ion 1800 мА·ч, быстрое зарядное устройство"
+      ] },
+    p2: { name: "DT825 · DT885 · DT885PMR", price: "143 900 ₽", img: "https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg",
+      specs: [
+        "VHF 136–174 МГц / UHF 400–470 МГц, вокодер AMBE+2™",
+        "99 частотных каналов, 8 зон (всего 792 канала)",
+        "Класс взрывозащиты: ATEX II 2G Ex ib IIA T4 Gb · ТР ТС 012/2011: 1Ex ib IIA T4 Gb X",
+        "Рудничная защита: РО Ex ia I Ma X / РВ Ex ib I Mb X",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 5 Вт VHF / 4 Вт UHF (high) / 1 Вт / 0,5 Вт PMR446 (low)",
+        "DMR Tier I, II · 2-слотовый симплекс · мониторинг разговоров в нескольких группах",
+        "Определение ID говорящего, групповой и индивидуальный вызов",
+        "Функции «Одинокий рабочий», «Человек упал» (опционально), кнопка экстренного вызова",
+        "Высококонтрастный чёрно-белый OLED-дисплей, 5 программируемых кнопок",
+        "Вес 435 г, габариты 138×60×38 мм",
+        "В комплекте: антенна, аккумулятор Li-Ion 1800 мА·ч, быстрое зарядное устройство"
+      ] },
+    p3: { name: "DT922 · DT982 · DT952", price: "143 900 ₽", img: "https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg",
+      specs: [
+        "VHF 136–174 МГц / UHF 400–470 МГц / PMR446, вокодер AMBE+2™",
+        "16 частотных каналов, 1 зона",
+        "Класс взрывозащиты: ATEX II 2G Ex ib IIC T4 Gb · ТР ТС 012/2011: 1Ex ib IIC T4 Gb X",
+        "Рудничная защита: РО Ex ia I Ma X / РВ Ex ib I Mb X",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 1 Вт (0,5 Вт для PMR446)",
+        "2-слотовый симплекс, функции «Одинокий рабочий», «Человек упал», кнопка экстренного вызова",
+        "3 программируемые кнопки, настройка звука для аксессуаров",
+        "Вес 435 г, габариты 138×60×38 мм",
+        "В комплекте: антенна, аккумулятор Li-Ion 1800 мА·ч, быстрое зарядное устройство"
+      ] },
+    p4: { name: "DT925 · DT985 · DT953", price: "152 900 ₽", img: "https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg",
+      specs: [
+        "VHF 136–174 МГц / UHF 400–470 МГц / PMR446, вокодер AMBE+2™",
+        "99 частотных каналов, 8 зон (792 канала, 16 для PMR446)",
+        "Класс взрывозащиты: ATEX II 2G Ex ib IIC T4 Gb · ТР ТС 012/2011: 1Ex ib IIC T4 Gb X",
+        "Рудничная защита: РО Ex ia I Ma X / РВ Ex ib I Mb X",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 1 Вт / 0,5 Вт для PMR446",
+        "DMR Tier I, II · мониторинг разговоров в нескольких группах · определение ID говорящего",
+        "Функции «Одинокий рабочий», «Человек упал», кнопка экстренного вызова, групповой и индивидуальный вызов",
+        "Высококонтрастный OLED-дисплей, 5 программируемых кнопок",
+        "Вес 435 г, габариты 138×60×38 мм"
+      ] },
+    p5: { name: "DX446E-IS · DX522-IS · DX582-IS", price: "62 920 ₽", img: "https://i.ibb.co/KxtxhPSD/DX582-IS-Face-on.jpg",
+      specs: [
+        "16 частотных (безлицензионных PMR446) каналов, вокодер AMBE+2™, DMR Tier I, II",
+        "Сертификация: UL913 Class I, II, III Division 1, Groups C–G, T4",
+        "ТР ТС 012/2011: 2Ex ic IIB T3 Gc X · Ex ic IIIB T120°C Db X",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Температура хранения −45…+85 °C, применения по ТР ТС −30…+55 °C",
+        "Выходная мощность 0,5 Вт PMR446 / 5 Вт VHF / 4 Вт UHF",
+        "2-слотовый симплекс (Motorola compatible TDMA Two-Slot Direct Mode), определение ID говорящего",
+        "Функции «Одинокий рабочий», «Человек упал» (опционально), кнопка экстренного вызова",
+        "3 программируемые кнопки, настройка звука для аксессуаров",
+        "Масса с аккумулятором 269 г, габариты 97×59,5×37 мм",
+        "IP site connect — лицензионный ключ (платная функция)",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство, инструкция"
+      ] },
+    p6: { name: "DX446L-IS · DX525-IS · DX585-IS", price: "67 420 ₽", img: "https://i.ibb.co/VcDJtkgw/DX585-IS-Face-on.jpg",
+      specs: [
+        "16 частотных (безлицензионных PMR446) + 99 частотных (134–174 / 400–470 МГц) каналов, 8 зон (792 канала)",
+        "Вокодер AMBE+2™, DMR Tier I, II",
+        "Сертификация: UL913 Class I, II, III Division 1, Groups C–G, T4",
+        "ТР ТС 012/2011: 2Ex ic IIB T3 Gc X · Ex ic IIIB T120°C Db X",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Температура хранения −45…+85 °C, применения по ТР ТС −30…+55 °C",
+        "Выходная мощность 0,5 Вт PMR446 / 5 Вт VHF / 4 Вт UHF",
+        "Высококонтрастный чёрно-белый OLED-дисплей, программируемая информация Basic/Simple/Advanced",
+        "5 программируемых кнопок, настройка звука для аксессуаров",
+        "Масса с аккумулятором 269 г, габариты 97×59,5×37 мм",
+        "IP site connect — лицензионный ключ (платная функция)",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство, инструкция"
+      ] },
+    p7: { name: "DT522 · DT582 · DT582PMR", price: "112 300 ₽", img: "https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg",
+      specs: [
+        "VHF 136–174 МГц / UHF 400–470 МГц / PMR446, вокодер AMBE+2™",
+        "16 частотных каналов, 1 зона",
+        "Сертификация: IECEx Ex ib IIA T4 Gb · ТР ТС 012/2011: 2Ex ic IIB T4 Gb",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 5/4 Вт VHF/UHF (high) / 1 Вт (low) / 0,5 Вт PMR446",
+        "2-слотовый симплекс, функции «Одинокий рабочий», «Человек упал», кнопка экстренного вызова",
+        "3 программируемые кнопки, вес 435 г, габариты 138×60×38 мм",
+        "Специальные цены при покупке от 50 шт. на условиях аванса",
+        "В комплекте: антенна, аккумулятор Li-Ion 1800 мА·ч, быстрое зарядное устройство"
+      ] },
+    p8: { name: "DT525 · DT585 · DT585PMR", price: "134 900 ₽", img: "https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg",
+      specs: [
+        "VHF 136–174 МГц / UHF 400–470 МГц, вокодер AMBE+2™",
+        "99 частотных каналов, 8 зон (всего 792 канала)",
+        "Сертификация: IECEx Ex ib IIA T4 Gb · ТР ТС 012/2011: 2Ex ic IIB T4 Gb",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 5 Вт VHF (high) / 4 Вт UHF (high) / 1 Вт (low)",
+        "DMR Tier I, II, мониторинг разговоров в нескольких группах, определение ID говорящего",
+        "Высококонтрастный OLED-дисплей, 5 программируемых кнопок",
+        "Вес 435 г, габариты 138×60×38 мм",
+        "Специальные цены при покупке от 50 шт. на условиях аванса"
+      ] },
+    p9: { name: "DX446E · DX422 · DX482", price: "33 170 ₽", img: "https://i.ibb.co/ynNH2zCk/DX482-446-E-FRONT.jpg",
+      specs: [
+        "16 частотных (PMR446 / 134–174 МГц / 400–470 МГц) каналов, 1 зона, вокодер AMBE++",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 0,5 Вт PMR446 / 5 Вт VHF / 4 Вт UHF",
+        "2-слотовый симплекс (Motorola compatible TDMA Two-Slot Direct Mode), определение ID говорящего",
+        "Функции «Одинокий рабочий», «Человек упал» (опционально), кнопка экстренного вызова",
+        "3 программируемые кнопки, настройка звука для аксессуаров",
+        "Вес 265 г с аккумулятором CNB450E",
+        "IP site connect — лицензионный ключ (платная функция)",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство"
+      ] },
+    p10: { name: "DX446L · DX425 · DX485", price: "42 100 ₽", img: "https://i.ibb.co/cSzYnhBC/DX485-446-L-FRONT.jpg",
+      specs: [
+        "99 частотных (PMR446 / 134–174 МГц / 400–470 МГц) каналов, 8 зон, вокодер AMBE++, DMR Tier I, II",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 0,5 Вт PMR446 / 5 Вт VHF / 4 Вт UHF",
+        "2-слотовый симплекс, определение ID говорящего",
+        "Функции «Одинокий рабочий», «Человек упал» (опционально), кнопка экстренного вызова",
+        "Высококонтрастный чёрно-белый OLED-дисплей, 5 программируемых кнопок",
+        "Вес 265 г с аккумулятором CNB450E",
+        "IP site connect — лицензионный ключ (платная функция)",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство"
+      ] },
+    p11: { name: "Ретранслятор DR482", price: "245 990 ₽", img: "https://i.ibb.co/Z6VSTbLH/Entel-Digital-repeater-View-on.jpg",
+      specs: [
+        "Диапазон частот 400–470 МГц, шаг сетки 12,5 / 25 кГц",
+        "Режимы (автоматическое переключение): аналоговый FM конвенциональный и DMR Tier II (TS 102 361-1, -2)",
+        "Полнодуплексный репитер, 1 канал",
+        "Номинальная выходная мощность 1–25 Вт (регулируемая), рабочий цикл передатчика — 100% непрерывная работа",
+        "Размер 95×220×375 мм (только корпус, два ретранслятора на 19″ полке), вес 3,8 кг",
+        "Диапазон температур: эксплуатация −30…+60 °C (вентиляция) / −30…+55 °C (пылевой фильтр), хранение −40…+70 °C",
+        "Антенные разъёмы: Tx N-тип, Rx BNC (с дуплексером — Tx/Rx N-тип); питание AC IEC C14 / DC Molex Mini-Fit Sr.",
+        "Опционально: дуплексный фильтр, встроенное зарядное устройство для внешней батареи, крепления и аксессуары, воздушные фильтры"
+      ] },
+    p12: { name: "HT712 · HT722 · HT782", price: "41 100 ₽", img: "https://i.ibb.co/B2pxQQB4/HT782-Front.jpg",
+      specs: [
+        "UHF 400–470 МГц / VHF 134–174 МГц / Low Band 66–88 МГц, аналоговая",
+        "16 каналов, межканальное расстояние 12,5 / 25 кГц, подсчёт числа зарядок аккумулятора",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Температура применения −20…+60 °C",
+        "Выходная мощность 5/4/1 Вт, сканирование каналов, функция свободные руки (VOX)",
+        "3 программируемые кнопки, настройка звука для аксессуаров, мониторинг разговоров",
+        "Определение ID говорящего, функции «Одинокий рабочий», «Человек упал» (опционально), кнопка экстренного вызова",
+        "Групповой и индивидуальный вызов, вес 277 г с аккумулятором и антенной",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство"
+      ] },
+    p13: { name: "HT713 · HT723 · HT783", price: "46 390 ₽", img: "https://i.ibb.co/SwCD28pS/HT783-Front-Full.jpg",
+      specs: [
+        "UHF 400–470 МГц / VHF 134–174 МГц / Low Band 66–88 МГц, аналоговая, 255 каналов",
+        "Межканальное расстояние 12,5 / 25 кГц, подсчёт числа зарядок аккумулятора",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Температура применения −20…+60 °C, выходная мощность 5/4/1 Вт",
+        "Сканирование каналов, функция свободные руки (VOX), 3 программируемые кнопки",
+        "Мониторинг разговоров, определение ID говорящего, «Одинокий рабочий», «Человек упал», экстренный вызов",
+        "Групповой и индивидуальный вызов, вес 277 г с аккумулятором и антенной",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство"
+      ] },
+    p14: { name: "HT726 · HT786 · MPT1327 «Т»", price: "98 990 ₽", img: "https://i.ibb.co/Fbj6GZHM/HT7-X6-Front.jpg",
+      specs: [
+        "UHF 400–470 МГц / VHF 134–174 МГц, транкинговая версия MPT1327 «Т» (аналоговая, 255 каналов)",
+        "Параметры системы MPT1327 настраиваются инженерами, поддерживающими транкинговую инфраструктуру",
+        "Межканальное расстояние 12,5 / 25 кГц, степень защиты IP68 · MIL STD 810C/D/E/F/G",
+        "Температура применения −20…+60 °C, выходная мощность 5/4/1 Вт",
+        "Сканирование каналов, VOX, полная клавиатура, 3 программируемые кнопки",
+        "Мониторинг разговоров, определение ID говорящего, «Одинокий рабочий», «Человек упал», экстренный вызов",
+        "Групповой и индивидуальный вызов, вес 277 г с аккумулятором и антенной",
+        "В комплекте: антенна, аккумулятор Li-Ion 2200 мА·ч, быстрое зарядное устройство"
+      ] },
+    p15: { name: "DT885 FF IIB* · DT985 FF IIC", price: "145 900 ₽", img: "https://i.ibb.co/hS9vKPD/DTEx-UHF-Front.jpg",
+      specs: [
+        "Marine UHF 450–470 МГц, сертификация MED",
+        "ATEX 1Ex ib IIB T4 Gb X · ТР ТС 012/2011: 1Ex ib II(A/C) T4 Gb X · РО Ex ia I Ma X / РВ Ex ib I Mb X",
+        "99 частотных каналов, 1 зона, степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 2 Вт, полудуплексные каналы отображаются на экране «Repeater»",
+        "Высококонтрастный чёрно-белый OLED-дисплей, программируемая информация Basic/Simple/Advanced",
+        "5 программируемых кнопок, настройка звука для аксессуаров",
+        "В комплекте: настраиваемая антенна, аккумулятор Li-Ion 1800 мА·ч, быстрое зарядное устройство"
+      ] },
+    p16: { name: "DT844 FF IIB* · DT944 FF IIC", price: "145 900 ₽", img: "https://i.ibb.co/7dnvQ30k/DTEx-VHF-Front.jpg",
+      specs: [
+        "Marine VHF 156–163,275 МГц, сертификация MED",
+        "ATEX 1Ex ib IIB T4 Gb X · ТР ТС 012/2011: 1Ex ib II(A/C) T4 Gb X · РО Ex ia I Ma X / РВ Ex ib I Mb X",
+        "173 канала, 3 зоны (INT, USA, CAN), степень защиты IP68 · MIL STD 810C/D/E/F/G",
+        "Выходная мощность 3,9 Вт, полудуплексные каналы отображаются на экране «Repeater»",
+        "Высококонтрастный чёрно-белый OLED-дисплей, 5 программируемых кнопок, настройка звука для аксессуаров",
+        "В комплекте: настроенная антенна, аккумулятор Li-Ion 1800 мА·ч, быстрое зарядное устройство"
+      ] },
+    p17: { name: "DN495 PoC & Wi-Fi", price: "По запросу", img: "https://i.ibb.co/5XgXBjn8/DN-FRONT-SIDE.jpg",
+      specs: [
+        "LTE FDD: B1/B3/B5/B7/B8/B20 · LTE TDD: B38/B40 · WCDMA: B1/B5/B8 · GSM 850/900/1800/1900 МГц",
+        "Wi-Fi 2,4 ГГц / 5,8 ГГц 802.11 a/b/g/n (5,8 ГГц по запросу)",
+        "Слот SIM-карты Nano (4FF), Bluetooth BT 2.1+EDR / 3.0 / 4.1LE",
+        "Спутниковое позиционирование GPS / ГЛОНАСС / BeiDou (BDS)",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа) · MIL STD 810C/D/E/F/G",
+        "В комплекте: антенна, аккумуляторы Li-Ion 2000 мА·ч (≈17 ч) и 1350 мА·ч (≈11 ч), быстрое зарядное устройство"
+      ] },
+    p18: { name: "P1 Приватный сервер", price: "По запросу", img: null,
+      specs: [
+        "Система Р1 организует связь для портативных радиостанций серии DN495, а также для устройств на iOS и Android",
+        "Работает с использованием сигнала сотовых операторов через сеть Wi-Fi или полностью без него — включая вариант без выхода в интернет",
+        "Недорогая альтернативная система радиосвязи для одного клиента, основанная на популярном сервисе E-PoC",
+        "Подробные материалы и характеристики предоставляются по запросу: sp@viaglobe.ru"
+      ] },
+    p19: { name: "Универсальный шлюз для P1", price: "По запросу", img: "https://i.ibb.co/d0rgCtSX/E-Po-C-Gateway.jpg",
+      specs: [
+        "Обеспечивает простой и недорогой переход с существующих радиосистем на E-PoC",
+        "Масштабируется для удовлетворения требований более сложных систем",
+        "Доступен в трёх версиях: универсальная работа со всеми радиосистемами; встроенное DMR Tier II / аналоговое VHF или UHF радио",
+        "Объединяет абонентов аналоговых и цифровых систем различных стандартов между собой",
+        "Подробные материалы и характеристики предоставляются по запросу: sp@viaglobe.ru"
+      ] },
+    p20: { name: "Аккумулятор Li-Ion CNB450E", price: "10 900 ₽", img: "https://i.ibb.co/SD3rjrby/CNB450E.jpg",
+      specs: [ "CNB450E", "Li-Ion, ёмкость 2200 мА·ч", "Для серии DX (DX422 / DX425 / DX446 / DX482 / DX485)" ] },
+    p21: { name: "Аккумулятор Li-Ion CNB750E", price: "11 100 ₽", img: "https://i.ibb.co/8ghkHwb2/CNB750-E-160603-110941.jpg",
+      specs: [ "CNB750E", "Li-Ion, ёмкость 2200 мА·ч", "Для серии HT7xx" ] },
+    p22: { name: "Зарядное устройство одиночное", price: "6 790 ₽", img: "https://i.ibb.co/LDTw7BWT/Single-charger-side-Suggestion.jpg",
+      specs: [ "Аналог CSAHT", "Одиночное быстрое зарядное устройство для серии DT/DX", "В комплекте — адаптер 220 В AC / 7,5 В DC" ] },
+    p23: { name: "Мультизарядное устройство 6 слотов", price: "48 960 ₽", img: "https://i.ibb.co/7J6GRHdt/six-pod-charger-Side.jpg",
+      specs: [ "Аналог CSBHT", "6-позиционное быстрое зарядное устройство для серии DT/DX", "В комплекте — адаптер 220 В AC / 7,5 В DC", "Позволяет заряжать парк раций одновременно" ] },
+    p24: { name: "Наушник-вкладыш с PTT", price: "8 300 ₽", img: "https://i.ibb.co/XkjFM9qs/ptt3.jpg", specs: null },
+    p25: { name: "Тяжёлая гарнитура шумозащитная", price: "62 920 ₽", img: "https://i.ibb.co/LGgDk7z/CHPHX-DX-1.jpg",
+      specs: [ "Аналог CHPD/DT9/DX-IS", "Два наушника ear defender с комфортным оголовьем для радиостанций серий DT и DX-IS",
+        "Высококачественный микрофон с функцией шумоподавления",
+        "Большая удобная кнопка PTT с подпружиненным зажимом — управление радиостанцией рукой в перчатке или под одеждой" ] },
+    p26: { name: "Выносной микрофон-динамик IP68 для моделей HT", price: "16 900 ₽", img: "https://i.ibb.co/FbF5J97B/CMP450-DX-close.jpg",
+      specs: [ "Выносной микрофон-динамик с клипсой", "Кнопка PTT", "Степень защиты IP68", "Для радиостанций серии HT" ] },
+    p27: { name: "Антенна штыревая VHF", price: "4 600 ₽", img: "https://i.ibb.co/SDJ1F5rD/ant-vhf.jpg",
+      specs: [ "Близкий аналог CAT80S/CAT20S", "Укороченная штыревая антенна VHF (155 МГц, 165 МГц)", "Совместима с сериями DT58X, DT88X, DT98X" ] },
+    p28: { name: "Антенна штыревая UHF", price: "4 600 ₽", img: "https://i.ibb.co/Z1xb4qJY/ANT-UHF.jpg",
+      specs: [ "Близкий аналог CAT80S/CAT20S", "Укороченная штыревая антенна UHF (425 МГц, 446 МГц, 460 МГц)", "Совместима с сериями DT58X, DT88X, DT98X" ] },
+    p29: { name: "Плечевая кобура (без клавиатуры)", price: "По запросу", img: "https://i.ibb.co/rRMLdmK5/CLC.jpg", specs: [ "Плечевая кобура для ношения рации на груди / плече", "Регулируемые ремни, быстрый доступ к устройству", "Для серии DT без клавиатуры" ] },
+    p30: { name: "USB-кабель программирования DT-серия", price: "По запросу", img: null,
+      specs: [ "Программирующий кабель ENTEL CPROG / EPROG для радиостанций серии DT",
+        "Требуется ПК с Windows 10 или выше и доступ в интернет",
+        "Стоимость услуги дистанционного программирования — 520 ₽ за радиостанцию, но не менее 5 200 ₽ с НДС 22%" ] },
+    p31: { name: "USB-кабель программирования DX-серия", price: "По запросу", img: null,
+      specs: [ "Программирующий кабель ENTEL CPROG / EPROG для радиостанций серии DX",
+        "Требуется ПК с Windows 10 или выше и доступ в интернет",
+        "Стоимость услуги дистанционного программирования — 520 ₽ за радиостанцию, но не менее 5 200 ₽ с НДС 22%" ] },
+    p32: { name: "Костнопроводная гарнитура CXR5", price: "112 500 ₽", img: "https://i.ibb.co/xqF90r48/CXR5-450-DX.jpg",
+      specs: [
+        "Костнопроводный (skull) микрофон — критически важный аксессуар безопасности, который можно носить под защитной одеждой",
+        "Обеспечивает чёткую и разборчивую связь в любых условиях — даже в самой суровой обстановке и при крайне высоком уровне фонового шума",
+        "Конструкция предназначена для установки внутри большинства касок, имеет встроенный наушник",
+        "Подключается к прочной кнопке PTT с защитой IP67 через встроенный разъём Nexus",
+        "Для моделей ATEX и IECEx (серии DT8XX и DT9XX)"
+      ] },
+    p33: { name: "Гарнитура взрывозащищённая ATEX EA12/DT9", price: "14 500 ₽", img: "https://i.ibb.co/tw9CQT7f/EA12-450-DX.jpg",
+      specs: [ "Аналог CHPHS/DT9", "Наушник противошумный одинарный на каску, сертификация ATEX", "Для радиостанций серии DT9" ] },
+    p34: { name: "Настенное зарядное крепление", price: "По запросу", img: "https://i.ibb.co/JwkzjRWv/03-Single-charger-front-2.jpg", specs: null },
+    p35: { name: "HT644", price: "По запросу", img: "https://i.ibb.co/xqCr9kNt/HT644-Front.jpg",
+      specs: [
+        "Описание: разработана для суровых морских условий, HT644 прочно зарекомендовала себя как одна из ведущих коммерческих VHF-раций. Эргономичный прочный корпус удобно лежит в руке, а мощный громкий звук гарантирует, что вызовы будут услышаны экипажем в любой обстановке. Дополнительную надёжность обеспечивает степень защиты IP68 — погружение на 2 метра на 4 часа, что позволяет переносить суровые условия жизни на море",
+        "Только аналоговая связь, все морские VHF-каналы (INT, USA, CAN, включая новые 4-значные каналы)",
+        "Степень защиты IP68 (погружение на 2 м, 4 часа), соответствие MIL-STD 810C/D/E/F",
+        "Превосходное качество звука — лучшее в классе, позолоченный и фиксируемый разъём для аксессуаров",
+        "Диапазон частот 156–163,275 МГц, шаг сетки 25 кГц, симплекс / полудуплекс",
+        "Аккумулятор Li-Ion 2200 мА·ч, время работы (цикл 5/5/90) — 14,5 часов, рабочее напряжение 7,6 В",
+        "Встроенный конденсаторный микрофон, рабочая температура −20…+55 °C",
+        "Мощность передатчика: 5 Вт (высокая) / <1 Вт (низкая)",
+        "Габариты 59,5×130×37 мм, вес 277 г с аккумулятором и антенной",
+        "Удобные функции: блокировка клавиш, голосовая активация VOX (с гарнитурой), сканирование каналов",
+        "В комплекте: аккумулятор Li-Ion, зарядное устройство, поясной клипс с пружиной, антенна, краткое руководство пользователя"
+      ] },
+    p36: { name: "Плечевая кобура (с клавиатурой)", price: "По запросу", img: "https://i.ibb.co/r27kQyr7/CLC-1.jpg",
+      specs: [ "Плечевая кобура для ношения рации на груди / плече", "Регулируемые ремни, быстрый доступ к устройству", "Для серии DT с клавиатурой" ] },
+    p37: { name: "Аккумулятор Li-Ion CNB450E-IS", price: "26 300 ₽", img: "https://i.ibb.co/SD3rjrby/CNB450E.jpg",
+      specs: [ "CNB450E-IS", "Li-Ion, ёмкость 2200 мА·ч", "Для серии DX-IS (DX446E-IS / DX522-IS / DX582-IS / DX446L-IS / DX525-IS / DX585-IS)" ] },
+    p38: { name: "Аккумулятор Li-Ion CNB550EV2", price: "26 900 ₽", img: "https://i.ibb.co/8ghkHwb2/CNB750-E-160603-110941.jpg",
+      specs: [ "CNB550EV2", "Li-Ion, ёмкость 1800 мА·ч", "Для серии DT5xx (DT522 / DT525 / DT582 / DT585)" ] },
+    p39: { name: "Аккумулятор Li-Ion CNB950EV2", price: "32 100 ₽", img: "https://i.ibb.co/8ghkHwb2/CNB750-E-160603-110941.jpg",
+      specs: [ "CNB950EV2", "Li-Ion, ёмкость 1800 мА·ч", "Для серий DT8xx / DT9xx (DT822 / DT825 / DT882 / DT885 / DT922 / DT925 / DT982 / DT985)" ] }
+  };
+
+  function openProductModal(id) {
+    var p = PRODUCT_DETAILS[id];
+    if (!p) return;
+    var overlay = document.getElementById("pmodal");
+    document.getElementById("pmodal-name").textContent = p.name;
+    document.getElementById("pmodal-price").innerHTML = p.price === "По запросу"
+      ? "Цена: <strong>по запросу</strong>"
+      : "Цена: <strong>" + p.price + "</strong> <span style=\"font-size:11px;\">с НДС 22%</span>";
+
+    var imgWrap = document.getElementById("pmodal-img-wrap");
+    imgWrap.innerHTML = p.img
+      ? '<img src="' + p.img + '" alt="' + p.name + '">'
+      : '<span class="pmodal-noimg">Фото уточняется</span>';
+
+    var specsEl = document.getElementById("pmodal-specs");
+    if (p.specs && p.specs.length) {
+      var html = "<ul>";
+      p.specs.forEach(function (s) { html += "<li>" + s + "</li>"; });
+      html += "</ul>";
+      specsEl.innerHTML = html;
+    } else {
+      specsEl.innerHTML = '<div class="pmodal-empty"><strong>Подробные характеристики уточняются</strong>'
+        + 'Совпадение с карточкой товара на entelradio.ru не найдено — заполните этот блок вручную в коде сайта '
+        + '(объект PRODUCT_DETAILS, ключ «' + id + '», поле specs).</div>';
+    }
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeProductModal() {
+    document.getElementById("pmodal").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  function openPolicyModal() {
+    document.getElementById("policy-modal").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+  function closePolicyModal() {
+    document.getElementById("policy-modal").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeProductModal();
+  });
+
+  function switchTab(name, btn) {
+    document.querySelectorAll(".catalog-section").forEach(function(s){ s.classList.remove("active"); });
+    document.querySelectorAll(".tab-btn").forEach(function(b){ b.classList.remove("active"); });
+    document.getElementById("tab-" + name).classList.add("active");
+    btn.classList.add("active");
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    var btn = e.target.querySelector(".btn-submit");
+    btn.textContent = "Заявка отправлена! Ответим в течение 1 рабочего дня.";
+    btn.style.background = "#1a6b2e";
+    btn.disabled = true;
+  }
+
+  var header = document.querySelector("header");
+  window.addEventListener("scroll", function() {
+    header.style.boxShadow = window.scrollY > 10 ? "0 2px 24px rgba(0,0,0,0.15)" : "none";
+  });
+
+  document.querySelectorAll("a[href^=\"#\"]").forEach(function(anchor) {
+    anchor.addEventListener("click", function(e) {
+      var href = this.getAttribute("href");
+      if (href === "#") return;
+      var target = document.querySelector(href);
+      if (!target) return;
+      e.preventDefault();
+      var headerH = document.querySelector("header").offsetHeight;
+      var top = target.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+</script>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
