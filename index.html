@@ -165,8 +165,8 @@
     }
     .hero h1 {
       font-family: var(--font-display);
-      font-size: clamp(48px, 7vw, 88px);
-      font-weight: 900; line-height: 0.95;
+      font-size: clamp(36px, 5.2vw, 64px);
+      font-weight: 900; line-height: 1.05;
       letter-spacing: -1px;
       text-transform: uppercase;
       color: #ffffff;
@@ -544,7 +544,7 @@
       section { padding: 60px 0; }
       .steps-grid { grid-template-columns: 1fr; }
       .form-row-2 { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 44px; }
+      .hero h1 { font-size: 34px; }
       .hero-actions { flex-direction: column; }
       .topbar-right { display: none; }
     }
@@ -666,16 +666,26 @@
     <div class="container">
       <div class="hero-label">Официальный дистрибьютор ENTEL в России</div>
       <h1>
-        Профессиональные<br>
-        радиостанции для<br>
-        <span class="accent">нефтегаза, химии,<br>шахт и морских судов</span>
+        Профессиональные радиостанции<br>
+        для <span class="accent">нефтегазовой и химической<br>промышленности, шахт, морских судов</span>
       </h1>
       <p class="hero-desc">Взрывобезопасные <strong style="color:#fff">ATEX / UL913 / IECEx / ТРТС 012/2011</strong> — <strong style="color:#fff">РУДНИЧНЫЕ ВЗРЫВОЗАЩИЩЁННЫЕ</strong> и <strong style="color:#fff">РУДНИЧНЫЕ ОСОБО ВЗРЫВОЗАЩИЩЁННЫЕ</strong> — цифровые DMR, морские и PoC-решения. Поставки юридическим лицам со счётом и НДС 22%.</p>
-      <div class="hero-certs" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;">
-        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">ATEX Zone 1,2</span>
-        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">UL913</span>
-        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">IECEx</span>
-        <span style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border:1.5px solid rgba(125,179,245,0.5);color:#7db3f5;border-radius:2px;">ТРТС 012/2011</span>
+      <div class="hero-certs" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px;">
+        <svg width="46" height="40" viewBox="0 0 46 40" aria-label="ATEX">
+          <polygon points="12,2 34,2 45,20 34,38 12,38 1,20" fill="#f5c518" stroke="#1a1a1a" stroke-width="2.5"/>
+          <text x="23" y="27" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="17" fill="#1a1a1a" letter-spacing="-1">Ex</text>
+        </svg>
+        <svg width="64" height="40" viewBox="0 0 64 40" aria-label="IECEx">
+          <rect x="1" y="1" width="62" height="38" rx="4" fill="#1d4f91"/>
+          <text x="32" y="25" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-style="italic" font-size="16" fill="#fff">IECEx</text>
+        </svg>
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-label="Ex">
+          <rect x="2" y="2" width="36" height="36" fill="none" stroke="#fff" stroke-width="2"/>
+          <text x="20" y="26" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="16" fill="#fff">Ex</text>
+        </svg>
+        <svg width="64" height="40" viewBox="0 0 64 40" aria-label="EAC">
+          <text x="32" y="27" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#fff">EAC</text>
+        </svg>
       </div>
       <div class="hero-actions">
         <a href="#catalog" class="btn-primary">
@@ -1176,7 +1186,7 @@
         <span class="product-tag tag-analog">Гарнитура</span>
         <div class="product-img-wrap"><img src="https://i.ibb.co/XkjFM9qs/ptt3.jpg" alt="Кнопка PTT для коммутации различных видов гарнитур" class="product-img"></div>
         <div class="product-name">Кнопка PTT для коммутации различных видов гарнитур</div>
-        <div class="product-spec">Выносная кнопка PTT для подключения и коммутации различных видов гарнитур. Совместимость уточняется по модели рации.</div>
+        <div class="product-spec">Выносная кнопка PTT для подключения и коммутации различных видов гарнитур. Совместимость уточняется по модели рации.<br>Запасная влагозащищённая кнопка PTT повышенной прочности для аксессуаров серии CXR.<br><strong style="color:var(--grey-lt)">ВНИМАНИЕ: уточняйте модель радиостанции</strong></div>
         <div class="product-footer">
           <div><div class="product-price">8 300 ₽</div><div class="product-price-note">с НДС 22%</div></div>
           <a href="#" class="btn-order" onclick="openProductModal('p24'); return false;">Подробнее</a>
@@ -1296,15 +1306,47 @@
       </div>
 
 
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура ATEX</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/Z9FJrWs/CXR16-DT-DX.png" alt="Ларингофон взрывозащищенный ATEX CXR16" class="product-img"></div>
+        <div class="product-name">Ларингофон взрывозащищенный ATEX</div>
+        <div class="product-spec">Ларингофон CXR16 — обеспечивает чёткую и разборчивую связь в самых сложных условиях и при экстремально высоком уровне шума. Состоит из мягкой регулируемой шейной ленты и прочного наушника «D»-формы с разъёмом Nexus, подключаемого к прочной кнопке PTT с защитой IP67.</div>
+        <div class="product-footer">
+          <div><div class="product-price">112 500 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p40'); return false;">Подробнее</a>
+        </div>
+      </div>
 
       <div class="product-card">
-        <span class="product-tag tag-analog">Крепление</span>
-        <div class="product-img-wrap"><img src="https://i.ibb.co/JwkzjRWv/03-Single-charger-front-2.jpg" alt="Настенное зарядное крепление" class="product-img"></div>
-        <div class="product-name">Настенное зарядное крепление</div>
-        <div class="product-spec">Настенный держатель-зарядка для рации. Постоянная готовность устройства. Для одиночных и многоместных конфигураций.</div>
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/fVJWhvGD/CHPHD-DT9.png" alt="Наушники для тяжелых условий взрывозащищенные CHPHD/DT9/DX-IS" class="product-img"></div>
+        <div class="product-name">Наушники для тяжелых условий взрывозащищенные CHPHD/DT9/DX-IS</div>
+        <div class="product-spec">Двухчашечные защитные наушники (только для использования с каской) с функцией VOX для портативных радиостанций серии DTEx.</div>
+        <div class="product-footer">
+          <div><div class="product-price">62 920 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p41'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/v4Zv2WCV/CHP450-HS-DX.png" alt="Наушник одинарный для каски CHP450HS/DX" class="product-img"></div>
+        <div class="product-name">Наушник одинарный для каски CHP450HS/DX</div>
+        <div class="product-spec">В обычном и взрывозащищённом DT9 (ATEX) исполнении. Одночашечная гарнитура для крепления на защитную каску с шумоподавляющим выносным микрофоном.</div>
+        <div class="product-footer">
+          <div><div class="product-price">57 590 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p42'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Гарнитура</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/Vc2GWHyp/2026-06-07-145432.png" alt="SAVOX C-C550 Взрывобезопасный выносной микрофон" class="product-img"></div>
+        <div class="product-name">SAVOX C-C550 Взрывобезопасный выносной микрофон</div>
+        <div class="product-spec">Комбинированный выносной микрофон-динамик с нательной кнопкой PTT. Защита IP67, протестирован по MIL-STD-810G. Позволяет управлять рацией под одеждой и в плотных перчатках.</div>
         <div class="product-footer">
           <div><div class="product-price">По запросу</div><div class="product-price-note">с НДС 22%</div></div>
-          <a href="#" class="btn-order" onclick="openProductModal('p34'); return false;">Подробнее</a>
+          <a href="#" class="btn-order" onclick="openProductModal('p43'); return false;">Подробнее</a>
         </div>
       </div>
 
@@ -1811,7 +1853,8 @@
       specs: [ "CSAHT", "Одиночное быстрое зарядное устройство для серии DT/DX", "В комплекте — адаптер 220 В AC / 7,5 В DC" ] },
     p23: { name: "Мультизарядное устройство 6 слотов", price: "48 960 ₽", img: "https://i.ibb.co/7J6GRHdt/six-pod-charger-Side.jpg",
       specs: [ "CSBHT", "6-позиционное быстрое зарядное устройство для серии DT/DX", "В комплекте — адаптер 220 В AC / 7,5 В DC", "Позволяет заряжать парк раций одновременно" ] },
-    p24: { name: "Кнопка PTT для коммутации различных видов гарнитур", price: "8 300 ₽", img: "https://i.ibb.co/XkjFM9qs/ptt3.jpg", specs: null },
+    p24: { name: "Кнопка PTT для коммутации различных видов гарнитур", price: "8 300 ₽", img: "https://i.ibb.co/XkjFM9qs/ptt3.jpg",
+      specs: [ "Выносная кнопка PTT для подключения и коммутации различных видов гарнитур", "Запасная влагозащищённая кнопка PTT повышенной прочности для аксессуаров серии CXR (Spare heavy duty waterproof push-to-talk for CXR accessories)", "Совместимость уточняется по модели рации", "ВНИМАНИЕ: уточняйте модель радиостанции" ] },
     p25: { name: "Тяжёлая гарнитура шумозащитная", price: "62 920 ₽", img: "https://i.ibb.co/LGgDk7z/CHPHX-DX-1.jpg",
       specs: [ "CHPD/DT9/DX-IS", "Два наушника ear defender с комфортным оголовьем для радиостанций серий DT и DX-IS",
         "Высококачественный микрофон с функцией шумоподавления",
@@ -1841,7 +1884,14 @@
       ] },
     p33: { name: "Гарнитура взрывозащищённая ATEX EA12/DT9", price: "14 500 ₽", img: "https://i.ibb.co/tw9CQT7f/EA12-450-DX.jpg",
       specs: [ "Аналог CHPHS/DT9", "Наушник противошумный D-форма одинарный, сертификация ATEX", "Для радиостанций серии DT9" ] },
-    p34: { name: "Настенное зарядное крепление", price: "По запросу", img: "https://i.ibb.co/JwkzjRWv/03-Single-charger-front-2.jpg", specs: null },
+    p40: { name: "Ларингофон взрывозащищенный ATEX", price: "112 500 ₽", img: "https://i.ibb.co/Z9FJrWs/CXR16-DT-DX.png",
+      specs: [ "Обеспечивает чёткую и разборчивую связь в самых сложных условиях и при экстремально высоком уровне шума", "Мягкая регулируемая шейная лента и прочный наушник «D»-формы с разъёмом Nexus", "Подключается к прочной кнопке PTT с защитой IP67", "Класс взрывозащиты: ATEX" ] },
+    p41: { name: "Наушники для тяжелых условий взрывозащищенные CHPHD/DT9/DX-IS", price: "62 920 ₽", img: "https://i.ibb.co/fVJWhvGD/CHPHD-DT9.png",
+      specs: [ "Двухчашечная защитная гарнитура повышенной прочности с качественным шумоподавляющим выносным микрофоном", "Только для использования с защитной каской — крепится через универсальный адаптер из комплекта", "Поддерживает голосовое управление передачей (VOX) и крупную удобную кнопку PTT с подпружиненным зажимом — управление возможно в перчатках или под одеждой", "Для портативных радиостанций серии DTEx", "В наличии распространённые адаптеры под каски (вместо универсального адаптера) — уточняйте при заказе" ] },
+    p42: { name: "Наушник одинарный для каски CHP450HS/DX", price: "57 590 ₽", img: "https://i.ibb.co/v4Zv2WCV/CHP450-HS-DX.png",
+      specs: [ "Одночашечная гарнитура повышенной прочности с качественным шумоподавляющим выносным микрофоном", "Крепится на любую защитную каску через универсальный адаптер из комплекта", "Поддерживает голосовое управление передачей (VOX) и крупную удобную кнопку PTT с подпружиненным зажимом — управление возможно в перчатках или под одеждой", "Доступна в обычном исполнении и во взрывозащищённом исполнении DT9 (ATEX)", "В наличии распространённые адаптеры под каски (вместо универсального адаптера) — уточняйте при заказе" ] },
+    p43: { name: "SAVOX C-C550 Взрывобезопасный выносной микрофон", price: "По запросу", img: "https://i.ibb.co/Vc2GWHyp/2026-06-07-145432.png",
+      specs: [ "SAVOX C-C550 — комбинированный выносной микрофон-динамик с нательным блоком PTT", "Прочная конструкция, всесторонне протестирован по стандарту MIL-STD-810G — для надёжной связи в тяжёлых условиях", "Пыле- и влагозащита IP67, выдерживает погружение в воду на глубину до 1 м", "Обеспечивает эффективную связь, когда рация находится под одеждой и при работе в плотных перчатках", "Пыле- и влагонепроницаемый корпус (IP67)", "Чрезвычайно прочная конструкция и крупные кнопки PTT", "Отличная тактильная отдача и управление даже в толстых перчатках", "Исключительное качество звука динамика в шумных и тяжёлых условиях", "Протестирован по стандарту MIL-STD-810" ] },
     p35: { name: "HT644", price: "По запросу", img: "https://i.ibb.co/xqCr9kNt/HT644-Front.jpg",
       specs: [
         "Описание: разработана для суровых морских условий, HT644 прочно зарекомендовала себя как одна из ведущих коммерческих VHF-раций. Эргономичный прочный корпус удобно лежит в руке, а мощный громкий звук гарантирует, что вызовы будут услышаны экипажем в любой обстановке. Дополнительную надёжность обеспечивает степень защиты IP68 — погружение на 2 метра на 4 часа, что позволяет переносить суровые условия жизни на море",
@@ -1922,10 +1972,41 @@
 
   function handleSubmit(e) {
     e.preventDefault();
-    var btn = e.target.querySelector(".btn-submit");
-    btn.textContent = "Заявка отправлена! Ответим в течение 1 рабочего дня.";
-    btn.style.background = "#1a6b2e";
+    var f = e.target;
+    var btn = f.querySelector(".btn-submit");
+    var data = {
+      company: f.company ? f.company.value : "",
+      inn: f.inn ? f.inn.value : "",
+      kpp: f.kpp ? f.kpp.value : "",
+      contact: f.contact ? f.contact.value : "",
+      phone: f.phone ? f.phone.value : "",
+      email: f.email ? f.email.value : "",
+      product: f.product ? f.product.value : ""
+    };
+    data._subject = "Заявка на КП — " + (data.company || data.contact || "сайт ENTEL.CLUB");
+    btn.textContent = "Отправляем...";
     btn.disabled = true;
+    fetch("https://formsubmit.co/ajax/sp@viaglobe.ru", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        "Организация": data.company,
+        "ИНН": data.inn,
+        "КПП": data.kpp,
+        "Контактное лицо": data.contact,
+        "Телефон": data.phone,
+        "Email": data.email,
+        "Модель или задача": data.product,
+        "_subject": data._subject
+      })
+    }).then(function(r) { return r.json(); }).then(function() {
+      btn.textContent = "Заявка отправлена! Ответим в течение 1 рабочего дня.";
+      btn.style.background = "#1a6b2e";
+    }).catch(function() {
+      btn.textContent = "Не удалось отправить. Напишите нам на info@entel.club";
+      btn.style.background = "#b33";
+      btn.disabled = false;
+    });
   }
 
   var header = document.querySelector("header");
