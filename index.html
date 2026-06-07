@@ -3053,4 +3053,10 @@
       if (!target) return;
       e.preventDefault();
       var headerH = document.querySelector("header").offsetHeight;
-      var top = target.getBoundingClientRect().top + window.scrollY
+      var top = target.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+</script>
+</body>
+</html>
