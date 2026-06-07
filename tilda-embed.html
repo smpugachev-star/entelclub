@@ -1,0 +1,513 @@
+<!-- ══════════════════════════════════════════════════════════════
+     ENTEL.CLUB — компактный код для вставки в HTML-блок Tilda
+     ----------------------------------------------------------------
+     Перед вставкой:
+     1) Загрузите style.css и main.js на GitHub Pages (в тот же репозиторий
+        smpugachev-star/entelclub), рядом с index.html — они подключаются
+        ниже по прямым ссылкам.
+     2) Полный каталог (49 позиций) остаётся на entel.club через якорную
+        ссылку «Смотреть весь каталог» — она ведёт в раздел #catalog
+        полной версии сайта на GitHub Pages.
+     3) Вставьте этот код целиком в HTML-блок Tilda вместо текущего <iframe>.
+     ══════════════════════════════════════════════════════════════ -->
+
+<link rel="stylesheet" href="https://smpugachev-star.github.io/entelclub/style.css">
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div>Официальный дистрибьютор ENTEL · Поставки для юридических лиц и ИП</div>
+    <div class="topbar-right">
+      <a href="mailto:info@entel.club">info@entel.club</a>
+      <a href="#order">Запросить КП</a>
+    </div>
+  </div>
+</div>
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo-wrap">
+        <img src="https://i.ibb.co/8gRGxkNd/Entel-Logo-Grey-HQ.png" alt="Entel" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-img-fallback" style="display:none">ENTEL</span>
+        <span class="logo-club">CLUB</span>
+      </a>
+      <nav>
+        <a href="#catalog">Каталог</a>
+        <a href="#how-it-works">Как заказать</a>
+        <a href="#about">О компании</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-contacts">
+        <a href="tel:+74959809945" class="phone-link">+7 (495) 980-99-45</a>
+        <a href="https://t.me/entelclub" class="btn-tg" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="container">
+      <div class="hero-label">Официальный дистрибьютор ENTEL в России</div>
+      <h1>
+        Профессиональные радиостанции<br>
+        для <span class="accent">нефтегазовой и химической<br>промышленности, шахт, морских судов</span>
+      </h1>
+      <p class="hero-desc">Взрывобезопасные <strong style="color:#fff">ATEX / UL913 / IECEx / ТРТС 012/2011</strong> — <strong style="color:#fff">РУДНИЧНЫЕ ВЗРЫВОЗАЩИЩЁННЫЕ</strong> и <strong style="color:#fff">РУДНИЧНЫЕ ОСОБО ВЗРЫВОЗАЩИЩЁННЫЕ</strong> — цифровые DMR, морские и PoC-решения. Поставки юридическим лицам со счётом и НДС 22%.</p>
+      <div class="hero-certs" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px;">
+        <svg width="46" height="40" viewBox="0 0 46 40" aria-label="ATEX">
+          <polygon points="12,2 34,2 45,20 34,38 12,38 1,20" fill="#f5c518" stroke="#1a1a1a" stroke-width="2.5"/>
+          <text x="23" y="27" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="17" fill="#1a1a1a" letter-spacing="-1">Ex</text>
+        </svg>
+        <svg width="64" height="40" viewBox="0 0 64 40" aria-label="IECEx">
+          <rect x="1" y="1" width="62" height="38" rx="4" fill="#1d4f91"/>
+          <text x="32" y="25" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-style="italic" font-size="16" fill="#fff">IECEx</text>
+        </svg>
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-label="Ex">
+          <rect x="2" y="2" width="36" height="36" fill="none" stroke="#fff" stroke-width="2"/>
+          <text x="20" y="26" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="16" fill="#fff">Ex</text>
+        </svg>
+        <img src="https://i.ibb.co/qL6dpwpR/UL-Mark-svg.png" alt="UL913" width="40" height="40" style="width:40px;height:40px;object-fit:contain;display:block;">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-label="IP68">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="#4f86c6" stroke-width="2.5"/>
+          <text x="20" y="24" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="11" fill="#4f86c6">IP68</text>
+        </svg>
+      </div>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Смотреть каталог
+        </a>
+        <a href="#order" class="btn-outline">Запросить коммерческое предложение</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">30<span class="u">+</span></div>
+          <div class="hero-stat-label">Моделей</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">ATEX</div>
+          <div class="hero-stat-label">Zone 1,2 / IECEx</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">НДС<span class="u"> 22%</span></div>
+          <div class="hero-stat-label">Счёт для юр. лиц</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">B2B</div>
+          <div class="hero-stat-label">Договор + УПД</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════ КАТАЛОГ (компактная витрина — топ-модели по категориям) ══════════ -->
+<section id="catalog">
+  <div class="container">
+    <div class="section-header-row">
+      <div>
+        <div class="section-label">Каталог продукции</div>
+        <h2 class="section-title">Радиостанции ENTEL</h2>
+        <p class="section-subtitle">Ниже — популярные модели по ключевым категориям. Полный каталог из 49 позиций (включая аксессуары) — на отдельной странице.</p>
+      </div>
+    </div>
+
+    <div class="catalog-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--border);">
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIA / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT822 / DT882 / DT882PMR" class="product-img"></div>
+        <div class="product-name">DT822 · DT882 · DT882PMR</div>
+        <div class="product-spec">
+          <strong>DT822</strong> VHF &nbsp;·&nbsp; <strong>DT882</strong> UHF &nbsp;·&nbsp; <strong>DT882PMR</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">134 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p1'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">UL913 / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/KxtxhPSD/DX582-IS-Face-on.jpg" alt="DX446E-IS / DX522-IS / DX582-IS" class="product-img"></div>
+        <div class="product-name">DX446E-IS · DX522-IS · DX582-IS</div>
+        <div class="product-spec">
+          16 каналов PMR446, DMR Tier I, II<br>
+          <strong>Сертификация:</strong> UL913 Class I, II, III &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          Масса 269 г, в комплекте антенна и зарядное устройство
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">62 920 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p5'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">IECEx / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT522 / DT582 / DT582PMR" class="product-img"></div>
+        <div class="product-name">DT522 · DT582 · DT582PMR</div>
+        <div class="product-spec">
+          VHF / UHF / PMR446, вокодер AMBE+2™<br>
+          <strong>Сертификация:</strong> IECEx Ex ib IIA T4 Gb &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          Специальные цены при покупке от 50 шт.
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">112 300 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p7'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">DMR Цифровые</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/cSzYnhBC/DX485-446-L-FRONT.jpg" alt="DX446L · DX425 · DX485" class="product-img"></div>
+        <div class="product-name">DX446L · DX425 · DX485</div>
+        <div class="product-spec">
+          99 каналов, 8 зон, DMR Tier I, II, вокодер AMBE++<br>
+          <strong>Защита:</strong> IP68 · MIL STD 810 &nbsp;·&nbsp; OLED-дисплей<br>
+          В комплекте: антенна, аккумулятор, зарядное устройство
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">42 100 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p10'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIC / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT825 / DT885 / DT885PMR" class="product-img"></div>
+        <div class="product-name">DT825 · DT885 · DT885PMR</div>
+        <div class="product-spec">
+          VHF / UHF, 99 каналов, 8 зон, DMR Tier I, II, вокодер AMBE+2™<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          OLED-дисплей, мониторинг разговоров в нескольких группах
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">143 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p2'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">UL913 / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/VcDJtkgw/DX585-IS-Face-on.jpg" alt="DX446L-IS / DX525-IS / DX585-IS" class="product-img"></div>
+        <div class="product-name">DX446L-IS · DX525-IS · DX585-IS</div>
+        <div class="product-spec">
+          16 + 99 каналов, 8 зон, DMR Tier I, II, OLED-дисплей<br>
+          <strong>Сертификация:</strong> UL913 Class I, II, III &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          Масса 269 г, в комплекте антенна и зарядное устройство
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">67 420 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p6'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-marine">Морские · ATEX</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/hS9vKPD/DTEx-UHF-Front.jpg" alt="DT885 FF · DT985 FF" class="product-img"></div>
+        <div class="product-name">DT885 FF IIB* · DT985 FF IIC</div>
+        <div class="product-spec">
+          Морская UHF 450–470 МГц, сертификация MED, 99 каналов<br>
+          <strong>Класс взрывозащиты:</strong> ATEX 1Ex ib IIB T4 Gb X &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          OLED-дисплей, режим «Repeater», настраиваемая антенна
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">145 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p15'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-analog">Аксессуары</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/Z6VSTbLH/Entel-Digital-repeater-View-on.jpg" alt="Ретранслятор DR482" class="product-img"></div>
+        <div class="product-name">Ретранслятор DR482</div>
+        <div class="product-spec">
+          400–470 МГц, аналоговый FM и DMR Tier II, полнодуплексный<br>
+          Выходная мощность 1–25 Вт (регулируемая)<br>
+          Опционально: дуплексный фильтр, крепления, аксессуары
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">245 990 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p11'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="https://smpugachev-star.github.io/entelclub/#catalog" class="btn-primary" target="_blank" rel="noopener" style="display:inline-flex;">
+        Смотреть весь каталог (49 позиций) →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Процесс работы</div>
+      <h2 class="section-title">Как оформить заказ</h2>
+      <p class="section-subtitle">Работаем только с юридическими лицами и ИП. Онлайн-эквайринг не применяется.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Оставьте заявку</div>
+        <div class="step-desc">Заполните форму или напишите в Telegram. Укажите модель или задачу — поможем подобрать.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Получите КП со счётом</div>
+        <div class="step-desc">В течение 1 рабочего дня пришлём коммерческое предложение с актуальными ценами и счёт на оплату.</div>
+        <span class="step-note">НДС 22% включён</span>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Оплата и документы</div>
+        <div class="step-desc">Оплата по безналичному расчёту. Предоставляем УПД/ТОРГ-12, счёт-фактуру, договор поставки.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Доставка</div>
+        <div class="step-desc">Отправка транспортной компанией или самовывоз из Москвы. Срок по России — 3–7 рабочих дней.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-label">О компании</div>
+        <h2 class="section-title">Официальный дистрибьютор ENTEL в России</h2>
+        <div class="red-line"></div>
+        <p class="about-text">ENTEL.CLUB — авторизованный поставщик профессиональных радиостанций ENTEL Communications Ltd. Работаем с промышленными предприятиями, нефтегазовым сектором, судостроительными компаниями и службами безопасности.</p>
+        <p class="about-text">Поставляем оборудование на объекты с повышенными требованиями к безопасности: нефтеперерабатывающие заводы, химические производства, шахты и морские суда.</p>
+        <div class="certs">
+          <div class="cert-item"><span class="cert-arrow">→</span>Авторизованный дистрибьютор ENTEL Communications Ltd (Филиппины)</div>
+          <div class="cert-item"><span class="cert-arrow">→</span>Поставки оборудования с ATEX Zone 1,2 ТРТС сертификацией</div>
+          <div class="cert-item"><span class="cert-arrow">→</span>Декларации о соответствии РФ на всё оборудование</div>
+          <div class="cert-item"><span class="cert-arrow">→</span>Гарантийный и постгарантийный сервис</div>
+        </div>
+      </div>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Оригинальная продукция</div>
+            <div class="about-feature-desc">Только оригинальное оборудование с заводскими сертификатами. Полная цепочка документов от производителя.</div>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Быстрое согласование</div>
+            <div class="about-feature-desc">КП и счёт — в течение 1 рабочего дня. Для крупных партий — индивидуальные условия.</div>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Полный пакет документов</div>
+            <div class="about-feature-desc">Договор, счёт-фактура, УПД/ТОРГ-12, декларации соответствия, паспорта изделий.</div>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5a2 2 0 0 1 1.99-2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.09v-.17z"/></svg>
+          </div>
+          <div>
+            <div class="about-feature-title">Техническая поддержка</div>
+            <div class="about-feature-desc">Подбор под проект, программирование частот, постпродажное обслуживание.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section id="order">
+  <div class="container">
+    <div class="order-grid">
+      <div>
+        <div class="section-label">Оформление заявки</div>
+        <h2 class="section-title">Запросите коммерческое предложение</h2>
+        <div class="red-line"></div>
+        <p class="order-info-text">Мы не используем онлайн-эквайринг. Заявка — это запрос счёта. В ответ вы получите КП с актуальными ценами и счёт для оплаты.</p>
+        <div class="order-steps">
+          <div class="order-step">
+            <div class="order-step-num">1</div>
+            <div class="order-step-text">
+              <strong>Заполните форму</strong>
+              Укажите модель или задачу. Если не знаете модель — опишите условия эксплуатации.
+            </div>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">2</div>
+            <div class="order-step-text">
+              <strong>Получите КП и счёт</strong>
+              В течение 1 рабочего дня пришлём коммерческое предложение на email.
+            </div>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">3</div>
+            <div class="order-step-text">
+              <strong>Оплата и отгрузка</strong>
+              После оплаты счёта — отправка ТК или самовывоз из Москвы.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-title">Заявка на КП</div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <label for="company">Организация</label>
+            <input type="text" id="company" name="company" placeholder="ООО «Название компании»" required>
+          </div>
+          <div class="form-row-2">
+            <div>
+              <label for="inn">ИНН <span class="hint">(для выставления счёта)</span></label>
+              <input type="text" id="inn" name="inn" placeholder="1234567890">
+            </div>
+            <div>
+              <label for="kpp">КПП <span class="hint">(для юр. лиц)</span></label>
+              <input type="text" id="kpp" name="kpp" placeholder="123456789">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="contact">Контактное лицо</label>
+            <input type="text" id="contact" name="contact" placeholder="Иванов Иван Иванович" required>
+          </div>
+          <div class="form-row-2">
+            <div>
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ivan@company.ru" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="product">Модель или задача</label>
+            <textarea id="product" name="product" placeholder="Например: взрывобезопасные рации ATEX для нефтяного предприятия, 10 штук. Или укажите конкретную модель." required></textarea>
+          </div>
+          <div class="vat-note">Все цены с НДС 22%. При необходимости предоставим разъяснение для бухгалтерии.</div>
+          <button type="submit" class="btn-submit">Отправить заявку — получить счёт</button>
+          <div class="form-disclaimer">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="contacts">
+  <div class="container">
+    <div class="section-label">Контакты</div>
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <div class="contacts-grid">
+      <div class="contact-block">
+        <div class="contact-block-label">Телефон</div>
+        <div class="contact-value"><a href="tel:+74959809945">+7 (495) 980-99-45</a></div>
+        <div class="contact-note">Пн–Пт, 9:00–18:00 МСК</div>
+        <div class="contact-messengers">
+          <a href="https://t.me/entelclub" class="btn-tg" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">Email</div>
+        <div class="contact-value"><a href="mailto:info@entel.club">info@entel.club</a></div>
+        <div class="contact-note">Для коммерческих запросов и КП</div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">Адрес: 2-й Рощинский пр. дом 8</div>
+        <div class="contact-value" style="font-size:18px;letter-spacing:0">Москва</div>
+        <div class="contact-note">Самовывоз по предварительной договорённости</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="/" class="footer-logo-wrap">
+        <img src="https://i.ibb.co/8gRGxkNd/Entel-Logo-Grey-HQ.png" alt="Entel" class="footer-logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="footer-logo-text" style="display:none">ENTEL</span>
+        <span class="logo-club" style="font-size:11px">CLUB</span>
+      </a>
+      <div class="footer-links">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О компании</a>
+        <a href="#order">Заказать</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#" onclick="openPolicyModal(); return false;">Политика конфиденциальности</a>
+      </div>
+      <div style="font-size:12px">&copy; 2025 ENTEL.CLUB</div>
+    </div>
+    <div class="footer-disclaimer">
+      Информация о ценах носит справочный характер. Точная стоимость подтверждается в коммерческом предложении. Все цены с НДС 22%.
+    </div>
+  </div>
+</footer>
+
+<!-- ══ Модальное окно: политика конфиденциальности ══ -->
+<div class="pmodal-overlay" id="policy-modal" onclick="if(event.target===this) closePolicyModal();">
+  <div class="pmodal-box policy-modal-box">
+    <button class="pmodal-close" onclick="closePolicyModal()" aria-label="Закрыть">✕</button>
+    <div class="policy-modal-body">
+      <h3>Политика конфиденциальности</h3>
+      <p>Настоящая Политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006 №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению их безопасности, принимаемые ENTEL.CLUB (далее — «Оператор»).</p>
+      <p><strong>1. Общие положения.</strong> Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+      <p><strong>2. Сбор и использование данных.</strong> Настоящая политика Оператора в отношении обработки персональных данных применяется ко всей информации, которую Оператор может получить о посетителях сайта entel.club Персональные данные (имя, телефон, адрес электронной почты, реквизиты организации) предоставляются пользователем самостоятельно при оформлении заявки на коммерческое предложение или счёт и используются исключительно для подготовки и направления коммерческих документов, обратной связи и информирования о статусе заказа.</p>
+      <p><strong>3. Передача данных третьим лицам.</strong> Оператор не передаёт полученные персональные данные третьим лицам, за исключением случаев, прямо предусмотренных законодательством Российской Федерации.</p>
+      <p><strong>4. Защита данных.</strong> Оператор принимает необходимые правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.</p>
+      <p><strong>5. Изменение политики.</strong> Любые изменения политики Оператора в отношении обработки персональных данных будут отражены в настоящем документе. Политика действует бессрочно до замены её новой версией.</p>
+      <p><strong>6. Контакты.</strong> Разъяснения по вопросам, касающимся обработки персональных данных, можно получить, обратившись к Оператору по электронной почте: <strong>sales@viaglobe.ru</strong>.</p>
+      <p>Нажимая кнопку «Отправить» или «Оформить заказ» на сайте, пользователь подтверждает своё согласие с настоящей Политикой и даёт согласие на обработку своих персональных данных.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ Модальное окно: фото + подробные характеристики товара ══ -->
+<div class="pmodal-overlay" id="pmodal" onclick="if(event.target===this) closeProductModal();">
+  <div class="pmodal-box">
+    <button class="pmodal-close" onclick="closeProductModal()" aria-label="Закрыть">✕</button>
+    <div class="pmodal-grid">
+      <div class="pmodal-img-wrap" id="pmodal-img-wrap"></div>
+      <div class="pmodal-body">
+        <div class="pmodal-name" id="pmodal-name"></div>
+        <div class="pmodal-price" id="pmodal-price"></div>
+        <div class="pmodal-section-title">Подробные характеристики</div>
+        <div id="pmodal-specs"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://smpugachev-star.github.io/entelclub/main.js"></script>
