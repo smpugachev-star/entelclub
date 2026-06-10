@@ -41,14 +41,20 @@
       </nav>
       <div class="header-contacts">
         <a href="tel:+74959809945" class="phone-link">+7 (495) 980-99-45</a>
-        <a href="https://t.me/entelclub" class="btn-tg" target="_blank">
+        <a href="https://t.me/entelclub_bot" class="btn-tg" target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          Telegram
+          <span class="tg-label">Telegram</span>
         </a>
+        <a href="#order" class="btn-kp-mobile">Получить КП</a>
       </div>
     </div>
   </div>
 </header>
+<!-- MOBILE PHONE STRIP -->
+<div class="header-phone-strip">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.09 4.18 2 2 0 015.08 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 7l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/></svg>
+  <a href="tel:+74959809945">+7 (495) 980-99-45</a>
+</div>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
@@ -59,7 +65,14 @@
         Профессиональные радиостанции<br>
         для <span class="accent">нефтегазовой и химической<br>промышленности, шахт, морских судов</span>
       </h1>
-      <p class="hero-desc">Взрывобезопасные <strong style="color:#fff">ATEX / UL913 / IECEx / ТРТС 012/2011</strong> — <strong style="color:#fff">РУДНИЧНЫЕ ВЗРЫВОЗАЩИЩЁННЫЕ</strong> и <strong style="color:#fff">РУДНИЧНЫЕ ОСОБО ВЗРЫВОЗАЩИЩЁННЫЕ</strong> — цифровые DMR, морские и PoC-решения. Поставки юридическим лицам со счётом и НДС 22%.</p>
+      <div class="hero-actions" style="margin-top:28px;">
+        <a href="#order" class="btn-primary">Получить КП за 1 день</a>
+        <a href="#catalog" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Смотреть каталог
+        </a>
+      </div>
+      <p class="hero-desc" style="margin-top:28px;">Взрывобезопасные <strong style="color:#fff">ATEX / UL913 / IECEx / ТРТС 012/2011</strong> — <strong style="color:#fff">РУДНИЧНЫЕ ВЗРЫВОЗАЩИЩЁННЫЕ</strong> и <strong style="color:#fff">РУДНИЧНЫЕ ОСОБО ВЗРЫВОЗАЩИЩЁННЫЕ</strong> — цифровые DMR, морские и PoC-решения. Поставки юридическим лицам со счётом и НДС 22%.</p>
       <div class="hero-certs" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px;">
         <svg width="46" height="40" viewBox="0 0 46 40" aria-label="ATEX">
           <polygon points="12,2 34,2 45,20 34,38 12,38 1,20" fill="#f5c518" stroke="#1a1a1a" stroke-width="2.5"/>
@@ -78,13 +91,6 @@
           <circle cx="20" cy="20" r="18" fill="none" stroke="#4f86c6" stroke-width="2.5"/>
           <text x="20" y="24" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="11" fill="#4f86c6">IP68</text>
         </svg>
-      </div>
-      <div class="hero-actions">
-        <a href="#catalog" class="btn-primary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-          Смотреть каталог
-        </a>
-        <a href="#order" class="btn-outline">Запросить коммерческое предложение</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -121,21 +127,6 @@
     <div class="catalog-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--border);">
 
       <div class="product-card">
-        <span class="product-tag tag-atex">ATEX IIA / ТРТС</span>
-        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT822 / DT882 / DT882PMR" class="product-img"></div>
-        <div class="product-name">DT822 · DT882 · DT882PMR</div>
-        <div class="product-spec">
-          <strong>DT822</strong> VHF &nbsp;·&nbsp; <strong>DT882</strong> UHF &nbsp;·&nbsp; <strong>DT882PMR</strong> PMR446<br>
-          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA<br>
-          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
-        </div>
-        <div class="product-footer">
-          <div><div class="product-price">134 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
-          <a href="#" class="btn-order" onclick="openProductModal('p1'); return false;">Подробнее</a>
-        </div>
-      </div>
-
-      <div class="product-card">
         <span class="product-tag tag-dmr">UL913 / ТРТС</span>
         <div class="product-img-wrap"><img src="https://i.ibb.co/KxtxhPSD/DX582-IS-Face-on.jpg" alt="DX446E-IS / DX522-IS / DX582-IS" class="product-img"></div>
         <div class="product-name">DX446E-IS · DX522-IS · DX582-IS</div>
@@ -145,53 +136,8 @@
           Масса 269 г, в комплекте антенна и зарядное устройство
         </div>
         <div class="product-footer">
-          <div><div class="product-price">62 920 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <div><div class="product-price">62&nbsp;920&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
           <a href="#" class="btn-order" onclick="openProductModal('p5'); return false;">Подробнее</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <span class="product-tag tag-dmr">IECEx / ТРТС</span>
-        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT522 / DT582 / DT582PMR" class="product-img"></div>
-        <div class="product-name">DT522 · DT582 · DT582PMR</div>
-        <div class="product-spec">
-          VHF / UHF / PMR446, вокодер AMBE+2™<br>
-          <strong>Сертификация:</strong> IECEx Ex ib IIA T4 Gb &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
-          Специальные цены при покупке от 50 шт.
-        </div>
-        <div class="product-footer">
-          <div><div class="product-price">112 300 ₽</div><div class="product-price-note">с НДС 22%</div></div>
-          <a href="#" class="btn-order" onclick="openProductModal('p7'); return false;">Подробнее</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <span class="product-tag tag-dmr">DMR Цифровые</span>
-        <div class="product-img-wrap"><img src="https://i.ibb.co/cSzYnhBC/DX485-446-L-FRONT.jpg" alt="DX446L · DX425 · DX485" class="product-img"></div>
-        <div class="product-name">DX446L · DX425 · DX485</div>
-        <div class="product-spec">
-          99 каналов, 8 зон, DMR Tier I, II, вокодер AMBE++<br>
-          <strong>Защита:</strong> IP68 · MIL STD 810 &nbsp;·&nbsp; OLED-дисплей<br>
-          В комплекте: антенна, аккумулятор, зарядное устройство
-        </div>
-        <div class="product-footer">
-          <div><div class="product-price">42 100 ₽</div><div class="product-price-note">с НДС 22%</div></div>
-          <a href="#" class="btn-order" onclick="openProductModal('p10'); return false;">Подробнее</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <span class="product-tag tag-atex">ATEX IIC / ТРТС</span>
-        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT825 / DT885 / DT885PMR" class="product-img"></div>
-        <div class="product-name">DT825 · DT885 · DT885PMR</div>
-        <div class="product-spec">
-          VHF / UHF, 99 каналов, 8 зон, DMR Tier I, II, вокодер AMBE+2™<br>
-          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
-          OLED-дисплей, мониторинг разговоров в нескольких группах
-        </div>
-        <div class="product-footer">
-          <div><div class="product-price">143 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
-          <a href="#" class="btn-order" onclick="openProductModal('p2'); return false;">Подробнее</a>
         </div>
       </div>
 
@@ -205,23 +151,83 @@
           Масса 269 г, в комплекте антенна и зарядное устройство
         </div>
         <div class="product-footer">
-          <div><div class="product-price">67 420 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <div><div class="product-price">67&nbsp;420&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
           <a href="#" class="btn-order" onclick="openProductModal('p6'); return false;">Подробнее</a>
         </div>
       </div>
 
       <div class="product-card">
-        <span class="product-tag tag-marine">Морские · ATEX</span>
-        <div class="product-img-wrap"><img src="https://i.ibb.co/hS9vKPD/DTEx-UHF-Front.jpg" alt="DT885 FF · DT985 FF" class="product-img"></div>
-        <div class="product-name">DT885 FF IIB* · DT985 FF IIC</div>
+        <span class="product-tag tag-dmr">IECEx / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT522 / DT582 / DT582PMR" class="product-img"></div>
+        <div class="product-name">DT522 · DT582 · DT582PMR</div>
         <div class="product-spec">
-          Морская UHF 450–470 МГц, сертификация MED, 99 каналов<br>
-          <strong>Класс взрывозащиты:</strong> ATEX 1Ex ib IIB T4 Gb X &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
-          OLED-дисплей, режим «Repeater», настраиваемая антенна
+          VHF / UHF / PMR446, вокодер AMBE+2™<br>
+          <strong>Сертификация:</strong> IECEx Ex ib IIA T4 Gb &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          Специальные цены при покупке от 50 шт.
         </div>
         <div class="product-footer">
-          <div><div class="product-price">145 900 ₽</div><div class="product-price-note">с НДС 22%</div></div>
-          <a href="#" class="btn-order" onclick="openProductModal('p15'); return false;">Подробнее</a>
+          <div><div class="product-price">112&nbsp;300&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p7'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-dmr">IECEx / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT525 / DT585 / DT585PMR" class="product-img"></div>
+        <div class="product-name">DT525 · DT585 · DT585PMR</div>
+        <div class="product-spec">
+          VHF / UHF, 99 каналов, 8 зон, DMR Tier I, II, вокодер AMBE+2™<br>
+          <strong>Сертификация:</strong> IECEx Ex ib IIA T4 Gb &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          OLED-дисплей, специальные цены при покупке от 50 шт.
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">134&nbsp;900&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p8'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIA / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT822 / DT882 / DT882PMR" class="product-img"></div>
+        <div class="product-name">DT822 · DT882 · DT882PMR</div>
+        <div class="product-spec">
+          <strong>DT822</strong> VHF &nbsp;·&nbsp; <strong>DT882</strong> UHF &nbsp;·&nbsp; <strong>DT882PMR</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">134&nbsp;900&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p1'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIA / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/MDfGwmt8/DTEx-Front-Display.jpg" alt="DT825 / DT885 / DT885PMR" class="product-img"></div>
+        <div class="product-name">DT825 · DT885 · DT885PMR</div>
+        <div class="product-spec">
+          VHF / UHF, 99 каналов, 8 зон, DMR Tier I, II, вокодер AMBE+2™<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIA &nbsp;·&nbsp; <strong>Защита:</strong> IP68<br>
+          OLED-дисплей, мониторинг разговоров в нескольких группах
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">143&nbsp;900&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p2'); return false;">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-tag tag-atex">ATEX IIC / ТРТС</span>
+        <div class="product-img-wrap"><img src="https://i.ibb.co/QvJf7m6f/DTEx-No-Display-Front.jpg" alt="DT922 / DT982 / DT952" class="product-img"></div>
+        <div class="product-name">DT922 · DT982 · DT952</div>
+        <div class="product-spec">
+          <strong>DT922</strong> VHF &nbsp;·&nbsp; <strong>DT982</strong> UHF &nbsp;·&nbsp; <strong>DT952</strong> PMR446<br>
+          <strong>Класс взрывозащиты:</strong> ATEX Zone 1,2 — Группа IIC<br>
+          <strong>Стандарт:</strong> ATEX / ТРТС 012/2011 &nbsp;·&nbsp; <strong>Защита:</strong> IP68
+        </div>
+        <div class="product-footer">
+          <div><div class="product-price">143&nbsp;900&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <a href="#" class="btn-order" onclick="openProductModal('p3'); return false;">Подробнее</a>
         </div>
       </div>
 
@@ -235,7 +241,7 @@
           Опционально: дуплексный фильтр, крепления, аксессуары
         </div>
         <div class="product-footer">
-          <div><div class="product-price">245 990 ₽</div><div class="product-price-note">с НДС 22%</div></div>
+          <div><div class="product-price">245&nbsp;990&nbsp;₽</div><div class="product-price-note">с НДС 22%</div></div>
           <a href="#" class="btn-order" onclick="openProductModal('p11'); return false;">Подробнее</a>
         </div>
       </div>
@@ -431,7 +437,7 @@
         <div class="contact-value"><a href="tel:+74959809945">+7 (495) 980-99-45</a></div>
         <div class="contact-note">Пн–Пт, 9:00–18:00 МСК</div>
         <div class="contact-messengers">
-          <a href="https://t.me/entelclub" class="btn-tg" target="_blank">
+          <a href="https://t.me/entelclub_bot" class="btn-tg" target="_blank">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
             Telegram
           </a>
@@ -472,6 +478,9 @@
     </div>
     <div class="footer-disclaimer">
       Информация о ценах носит справочный характер. Точная стоимость подтверждается в коммерческом предложении. Все цены с НДС 22%.
+    </div>
+    <div class="footer-disclaimer" style="margin-top:12px; border-top:none; padding-top:0;">
+      ООО «ВИАГЛОБ ИННОВАЦИИ» &nbsp;·&nbsp; ИНН&nbsp;7706790716 &nbsp;·&nbsp; ОГРН&nbsp;1137746191461 &nbsp;·&nbsp; 115419, г.&nbsp;Москва, 2-й&nbsp;Рощинский проезд, д.&nbsp;8, стр.&nbsp;5 (БЦ «Серпуховской двор»)
     </div>
   </div>
 </footer>
