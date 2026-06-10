@@ -100,6 +100,12 @@ nav a:hover { color: #1a1e2e; }
   padding: 7px 12px; border-radius: var(--r); transition: opacity var(--t);
 }
 .btn-tg:hover { opacity: 0.85; }
+.btn-kp-mobile {
+  display: none;
+}
+.header-phone-strip {
+  display: none;
+}
 /* ── HERO ── */
 .hero {
   position: relative;
@@ -520,6 +526,23 @@ footer {
   .hero h1 { font-size: 34px; }
   .hero-actions { flex-direction: column; }
   .topbar-right { display: none; }
+  /* Mobile header: hide phone & tg label, show КП button */
+  .phone-link { display: none; }
+  .tg-label { display: none; }
+  .btn-kp-mobile {
+    display: inline-flex; align-items: center;
+    background: var(--red); color: #fff; font-size: 12px; font-weight: 700;
+    padding: 7px 12px; border-radius: var(--r); white-space: nowrap;
+    letter-spacing: 0.3px;
+  }
+  .btn-kp-mobile:hover { background: var(--red-dk); }
+  /* Mobile phone strip below header */
+  .header-phone-strip {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; background: #f7f7f7; border-bottom: 1px solid var(--border);
+    padding: 7px 16px; font-size: 14px; font-weight: 700; color: #1a1e2e;
+  }
+  .header-phone-strip a { color: inherit; }
 }
 
 /* ══ Модальное окно «Подробнее» ══ */
